@@ -4,10 +4,10 @@ _docs/* linguist-documentation
 src/public/files/** linguist-vendored
 src/public/css/* linguist-vendored
 src/public/modules/** linguist-vendored
-src/app/includes/includeASCIISpecialCharacters.php linguist-vendored
-src/app/includes/includeColorTables.php linguist-vendored
-src/app/includes/includeHTTPResponseStatusCodes.php linguist-vendored
-src/app/includes/includeISOCountryList.php linguist-vendored
-src/app/includes/includeTimeZones.php linguist-vendored
-src/app/includes/includeTopLevelDomains.php linguist-vendored
-src/app/includes/includeWindowsVersionNumbers.php linguist-vendored
+src/app/includes/ascii_special_characters.php linguist-vendored
+src/app/includes/color_tables.php linguist-vendored
+src/app/includes/http_response_status_codes.php linguist-vendored
+src/app/includes/iso_country_list.php linguist-vendored
+src/app/includes/time_zones.php linguist-vendored
+src/app/includes/top_level_domains.php linguist-vendored
+src/app/includes/windows_version_numbers.php linguist-vendored
