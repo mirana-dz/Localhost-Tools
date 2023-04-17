@@ -1,0 +1,120 @@
+Fwd: intitle:"atvise - next generation"
+Fwd: intitle:"Index of /" intext:"resource/"
+Google to wordpress
+site:gov.* intitle:"index of" *.csv
+site:papaly.com + keyword
+inurl: /wp-content/uploads/ inurl:"robots.txt" "Disallow:" filetype:txt
+db_password filetype:env
+site:postman.com + keyword
+intitle:index of settings.py
+inurl:admin filetype:xlsx site:gov.*
+inurl:admin filetype:xls
+site:gov.* intitle:"index of" *.apk
+site:pastebin.com intitle:"cpanel"
+inurl:admin filetype:txt
+inurl:admin filetype:xls site:gov.in
+intitle:"index of" "wp-inc"
+inurl:pastebin "SHODAN_API_KEY"
+site:*.edu.in intitle:index of
+inurl:gov.in & inurl:admin
+allintext"account number"
+intitle:"index of" "admin.js"
+site:*.id intitle:"index of" "screenshot*.jpg"
+intitle:"index of" "apache.log" | "apache.logs"
+intitle:"index of" "*.yaml"
+inurl:*gov intitle:"index of" "docker-compose"
+site:*.github.io intext:cheatsheet+offensive+pentesting
+inurl:*gov intitle:"index of/documents"
+intitle:"index of" "/mysql"
+site:.edu intext:"index of" "payroll"
+site:*.se intitle:"index of"
+site:*.ng intitle:index of
+intitle:"index of" "*.vcf"
+intitle:"index of" site:gov.in
+intitle"index of" "php"
+intitle:"index of" "/products"
+intitle:"index of "/key/" "key.txt"
+site:drive.google.com "*.pdf"
+intitle:"index of" "*.mp4"
+inurl:forgotpassword.php
+site:.in | .com | .net intitle:"index of" ftp
+intitle:"index of" "/public_html"
+site:.nic.in inurl:.php?id=
+intitle:"index of" "sysinfo"
+inurl:.org intitle index.of "inflation"
+intitle:"index of" "admin*.txt"
+intitle.index of .log
+intitle:"index of" site:gov.*
+intitle:"index of" site:gov.np
+intitle:"index of" site:gov.ru
+intitle.index of API*.txt
+inurl:linkedin.com "view my resume" facebook
+intitle.index of .exe
+intitle:"index of" "/public/js"
+site:*/admin-portal/
+intitle:"index of" site:gov.gr
+inurl:node_modules/ua-parser-js
+site:com "rfp" filetype:pdf
+intitle:"index of" " glimpse "
+intitle:"index of" "data*"
+intitle:"index of" Servlet"
+site: com intext " organisation data" filetype:xls
+intitle:"index of" " index.php.bak "
+inurl:pastebin "CVV"
+inurl:pastebin "API_KEY"
+intitle:"index of" "dvwssr.dll "
+intitle:"index of" " fileadmin "
+intitle:"index of" " webdriver "
+intitle:"index of" "/students"
+intitle:"index of" "hello.bat "
+intext:"Index of /chatlogs"
+intitle:"index of" " mod_auth_mysql "
+site:.edu intext:"index of" "logs"
+intitle:"index of" "msadcs.dll "
+inurl:.php?=*php site:.nic.in
+intitle:"index of" "default.asp "
+inurl:*gov intitle:"index of/documents"
+intitle:"index of" " login.jsp "
+intitle:"index of" "browser.inc "
+inurl:pastebin "Windows 10 Product Keys*"
+intitle:"index of" upload.asp "
+intitle:"index of" " htsearch "
+intitle:"index of" " YaBB.pl "
+inurl:pastebin "SHODAN_API_KEY"
+intitle:"index of" "test.bat "
+intitle:"index of" "document*.pdf"
+intitle:"index of" " sendmail.inc "
+site:*/forgotpassword.php
+site:gov.hk intitle:index of /
+site:pastebin.com "*@gmail.com password"
+intitle:"index of" "node.js"
+inurl:pastebin "AWS_ACCESS_KEY"
+site:.edu intitle:"index of"
+intitle:"Index of" *.py
+site:.edu inurl:search
+intitle:"Index of" *.xlsx
+intitle:"index of" "/.cpanel"
+intitle:"Index of" "Screenshot"
+site:com intitle:"index of" .env
+inurl:conf/nginx.conf
+inurl: conf/fastcgi.conf
+index of :excel documents
+intext:"Index of" intext:"config.zip"
+intitle:"index of" "certificates"
+intitle:"Index of" "DCIM/camera"
+intitle:"Index of" "Program files"
+{intitle: indexof/.git }
+intitle:"index of" :mobile number
+intitle:"Index of" "system32"
+intitle:"Index of /logs/" "nginx"
+intext:pass filetype:txt
+site:gitlab.* intext:password intext:@gmail.com | @yahoo.com | @hotmail.com
+intitle:"index of" "dhcp"
+index of: "invoice" "upload"
+intitle:"index of" "particle.js"
+inurl:/package.json
+index of:"blog" "upload"
+intext:"index of" "home_page"
+inurl:cache/uploads
+index of: "participants" "uploads"
+intitle:"index of" "/.git/config"

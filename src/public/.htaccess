@@ -1,0 +1,49 @@
+# mod_deflate settings:
+<IfModule mod_deflate.c>
+<FilesMatch "\.(ico|jpg|jpeg|png|gif|js|css|html|php|txt|xml)$">
+SetOutputFilter DEFLATE
+</FilesMatch>
+</IfModule>
+
+# MIME types settings:
+<IfModule mod_mime.c>
+AddType text/xml                                    xml
+AddType application/json                            json
+AddType application/rss+xml                         rss
+AddType application/json                            map
+AddType text/javascript                             js mjs
+AddType application/manifest+json                   webmanifest
+AddType text/cache-manifest                         appcache
+AddType audio/mp4                                   f4a f4b m4a
+AddType audio/ogg                                   oga ogg spx
+AddType video/mp4                                   mp4 mp4v mpg4
+AddType video/ogg                                   ogv
+AddType video/webm                                  webm
+AddType video/x-flv                                 flv
+AddType image/svg+xml                               svgz
+AddType image/x-icon                                cur
+AddType image/webp                                  webp
+AddType application/vnd.ms-fontobject               eot
+AddType font/woff                                   woff
+AddType font/woff2                                  woff2
+AddType font/ttf                                    ttf
+AddType font/collection                             ttc
+AddType font/otf                                    otf
+AddType text/vtt                                    vtt
+AddCharset utf-8 .appcache \
+                     .atom \
+                     .css \
+                     .js \
+                     .json \
+                     .manifest \
+                     .map \
+                     .mjs \
+                     .rdf \
+                     .rss \
+                     .vtt \
+                     .webmanifest \
+                     .xml
+</IfModule>
+
+# Default charset settings:
+AddDefaultCharset utf-8

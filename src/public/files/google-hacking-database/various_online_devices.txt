@@ -1,0 +1,120 @@
+intitle:"MODBUS TCP RS485 Converter" intext:"Module Name: MMTCPBCONV" "powered by Atmel ARM."
+intext:"Real-time IP Camera Monitoring System" intext:"ActiveX Mode (For IE Browser)"
+intitle:"Secure Access Service" inurl:"/dana-na/auth/url_default/welcome.cgi"
+intitle:"webcamXP" inurl:8080
+intitle:" - General Status [none]"
+intitle:"Microseven M7CAM IP Camera"
+intitle:"ADSL Router" inurl:"/login.htm"
+intitle:"webcamXP 5" inurl:admin.html
+Fwd: intitle:"Heatmiser Wifi Thermostat" "username" -.com
+Fwd: intitle:"OS-ZuKon" "SSS Siedle"
+Fwd: intitle:"SPC4300" "ID"
+Fwd: intitle:"Codian MCU - Home Page"
+©20 "Copyright Yamaha Corporation Visit"
+intitle:"SPC4300" "ID"
+inurl:/admin/public/asdm.jnlp "ASDM on"
+intitle:"OS-ZuKon" "SSS Siedle"
+intitle:"IPC CHIP Main Page" "Beck IPC GmbH"
+intitle:"EnvisionGateway" "scheduler" "control"
+intitle:"C-more -- the best HMI presented by AutomationDirect"
+inurl:/cgi-bin/login.html "qnap turbo nas"
+intitle:"Youless energy monitor" "Model" "Firmware" "www.youless.nl"
+intext:"amcrest" "LDAP User"
+intitle:"Codian MCU" "MCU" "Home Streaming Conferences"
+intitle:"CirCarLife Scada" inurl:/html/index.html
+inurl:/controlmenu.htm
+intitle:"Pyramid Debug Toolbar" inurl:_debug_toolbar
+intext:"amcrest" "Invalid login credentials"
+intitle:"ipMonitor - Log in"
+intitle:"yawcam" "It's a webcam!" "user" "pass"
+intitle:"ACEmanager" "ALEOS Version"
+Datamanager "Devices" "Reports" "Alarm" "Log" "Service" "Gp Run-On"
+intitle:"Device(Foscam)" "Real-time IP Camera Monitoring System"
+Language "SIM NUM" "DEV NUM" intitle:"mdvr"
+intitle:"SoundTouch Access Point Setup"
+intitle:"JUNG KNX Smart-Panel" "JUNG Single Regular"
+intext:"This page displays the general system information of the print server."
+intitle:"Bose SoundTouch Wi-Fi Music System Setup" inurl:"/setup/index.asp"
+intitle:"Login" intext:"PLANET Technology Corporation. All rights reserved."
+Router Name "Router Model" "LAN MAC" "WAN MAC"
+intitle:"D-LINK CORPORATION, INC" intext:"D-Link Corporation, Inc." -dlink.ca
+intitle:"Welcome-netis Wireless"
+intitle:"setup" "Network setup" "DHCP Client ID" -.com
+inurl:hp/device/webAccess
+inurl:/nphMotionJpeg?Resolution=
+intitle:"Hello! Welcome to Synology Web Station!"
+inurl:/view.htm?mode=l
+inurl:"jpegpush.htm"
+intext:"2009 PLANET Technology Corporation"
+intitle:"Netgear System Login" intext:"system name"
+intitle:"Welcome to" intext:"configuration interface"
+intitle:"Blue Iris Remote View"
+intitle:"PRTG Network Monitor" inurl:index.htm intext:"Password" -inurl:prtg
+intitle:"Cisco ASDM" inurl:"admin/public/index.html"
+intitle:"xerox" inurl:i_index
+IPECS inurl:a_index.html
+intitle:"7100 login" "lancom"
+inurl:/hp/device/SignIn/
+inurl:/multi.html intitle:webcam
+intitle:"lg smart ip device" -.com
+intext:"Live View" inurl:ui3.htm
+intext:"Egardia & WoonVeilig" -site:"linkedin.*" -"data-lead.com" -"getemail.io" -"holaconnect.com" -"kzhead.info"
+intitle:"Cambium" inurl:top.cgi
+intitle:"vood Residential gateway" inurl:vood/cgi-bin/
+inurl:top.cgi intitle:"Motorola ptp"
+intitle:"CPU-Modul TROVIS 6610"
+inurl:"serverpush.htm" "IP Camera" intext:"Foscam"
+intitle:LANCOM "A webbrowser with active JavaScript support is required."
+intitle:("Canon" + "series Network Configuration" "Basic Information") + "JavaScript is not enabled"
+intitle:"myhome" intext:"Tilgin. All rights reserved. Copyright and Trademark."
+intitle:"Solar-Log™" intext:"Build Revision"
+intitle:"3CX Phone System Management Console"
+inurl:"/web/guest/en/websys/webArch/mainFrame.cgi"
+intitle:"Camera Status" inurl:/control/
+Username "Password" "ZTE Corporation. All rights reserved."
+intitle:"Remote UI" intext:"Printer status"
+intitle:"WF Series" inurl:PRTINFO.html
+NETGEAR, Inc. All rights reserved intitle:"Netgear Prosafe Plus Switch"
+intitle:"::: ACEmanager :::"
+intitle:"Dell OpenManage Switch Administrator" intext:"Type in Username and Password, then click OK"
+intitle:"supra IPC"
+intitle:"Alarm Panel" intext:"Climax Tech. Co., Ltd."
+intitle:"webcamxp" "Flash JPEG Stream"
+inurl:mobile.html intitle:webcamXP
+inurl:/portal/indicate intitle:Remote UI
+intext:"LANCOM 1781VA (over ISDN)"
+intitle:"Intelbras" site:*/index.html
+intitle:"Web Client for DVR"
+intitle:HP LASERJET PRO MFP inurl:/SSI/index.htm
+intitle:"Device(" intext:"ActiveX Mode (For IE Browser)"
+intitle:"Yealink" inurl:"servlet?m="
+intitle:series "Note: It is recommended to communicate via HTTPS for entering an administrator password."
+inurl:/PRESENTATION/BONJOUR intitle:Series
+inurl:/PRESENTATION/PSWD
+Name "Password" intitle:"LANCOM 1790VA"
+inurl:"/cgi-bin/luci" intext:"Authorization Required" intitle:"LuCI"
+allintext:"Copyright CANON INC" "iR-ADV"
+inurl:/PRESENTATION/EPSONCONNECT
+Google Dork: intitle:"ZM - System Log"
+inurl:/login/?referer=/admin/ intext:cradlepoint
+intext:@print.epsonconnect.com intitle:series
+Google Dork: intitle:"ZM - Console"
+inurl:/PRESENTATION/HTML/TOP/PRTINFO.HTML
+intitle:"Openstage IP Phone User" "IPv4" "DNS"
+intitle:"LK IHC controller" intext:"LK IHC"
+USB Port 1 (Public Data) + "USB Port 2 (Public Data)" "Status" -pdf
+inurl:ip_password.htm
+intitle:"DD-WRT (build 21061) - Info"
+intitle:"DSM mobile" intext:"Loading..."
+intitle:"NodeCore PoW Mining Pool" "NETWORK" "TYPE" "POOL ADDRESS" "FEE"
+intitle:"Web Client" inurl:"webcamera.html"
+intitle:"Login" inurl:"/simple/view/login.html"
+inurl:/DeviceInformation/View "Device Name"
+inurl:ip_snmp.htm
+intitle:"Bosch Security Systems" "LIVEPAGE" + "SETTINGS" -.net -.com
+intitle:"HD-Network Real Time Monitoring System" inurl:"/login.asp"
+intitle:"Milesight Network Camera" intext:"Language"
+site:*/net/net/protocol.html
+intitle:"Sys Name" System Summary Sensors
+intitle:"Epson Web Control" "OSD Control Pad"
+intitle:"NETSuveillance WEB"

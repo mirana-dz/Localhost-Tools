@@ -1,0 +1,142 @@
+[{
+"operator":"intitle:",
+"purpose":"Search URL",
+"web":"yes",
+"images":"yes",
+"groups":"yes",
+"news":"yes"
+},{
+"operator":"allintitle:",
+"purpose":"Search page title",
+"web":"yes",
+"images":"yes",
+"groups":"yes",
+"news":"yes"
+},{
+"operator":"inurl:",
+"purpose":"Search URL",
+"web":"yes",
+"images":"yes",
+"groups":"not really",
+"news":"like intitle"
+},{
+"operator":"allinurl:",
+"purpose":"Search URL",
+"web":"yes",
+"images":"yes",
+"groups":"yes",
+"news":"like intitle"
+},{
+"operator":"filetype:",
+"purpose":"Search Specific Files",
+"web":"yes",
+"images":"yes",
+"groups":"no",
+"news":"not really"
+},{
+"operator":"allintext:",
+"purpose":"Search text of page only",
+"web":"yes",
+"images":"yes",
+"groups":"yes",
+"news":"yes"
+},{
+"operator":"site:",
+"purpose":"search specific site",
+"web":"yes",
+"images":"yes",
+"groups":"no",
+"news":"not really"
+},{
+"operator":"link:",
+"purpose":"Search for links to pages",
+"web":"yes",
+"images":"no",
+"groups":"no",
+"news":"not really"
+},{
+"operator":"inanchor:",
+"purpose":"Search link anchor text",
+"web":"yes",
+"images":"yes",
+"groups":"not really",
+"news":"yes"
+},{
+"operator":"numrange:",
+"purpose":"Locate number",
+"web":"yes",
+"images":"no",
+"groups":"no",
+"news":"not really"
+},{
+"operator":"daterange:",
+"purpose":"Search in date range",
+"web":"yes",
+"images":"no",
+"groups":"no",
+"news":"not really"
+},{
+"operator":"author:",
+"purpose":"Group author search",
+"web":"no",
+"images":"no",
+"groups":"yes",
+"news":"not really"
+},{
+"operator":"group:",
+"purpose":"Group name search",
+"web":"no",
+"images":"no",
+"groups":"yes",
+"news":"not really"
+},{
+"operator":"insubject:",
+"purpose":"Group subject search",
+"web":"like intitle",
+"images":"yes",
+"groups":"like intitle",
+"news":"like intitle"
+},{
+"operator":"msgid:",
+"purpose":"Group msgid search",
+"web":"no",
+"images":"no",
+"groups":"yes",
+"news":"not really"
+},{
+"operator":"-",
+"purpose":"exclude a search term",
+"web":"N/A",
+"images":"N/A",
+"groups":"N/A",
+"news":"N/A"
+},{
+"operator":"\"\"",
+"purpose":"use quotes around search phrases. E.G \"master card\"",
+"web":"N/A",
+"images":"N/A",
+"groups":"N/A",
+"news":"N/A"
+},{
+"operator":".",
+"purpose":"a single-character wildcard",
+"web":"N/A",
+"images":"N/A",
+"groups":"N/A",
+"news":"N/A"
+},{
+"operator":"*",
+"purpose":"any word",
+"web":"N/A",
+"images":"N/A",
+"groups":"N/A",
+"news":"N/A"
+},{
+"operator":"|",
+"purpose":"boolean ‘OR’, E.G: \"master card\" | mastercard",
+"web":"N/A",
+"images":"N/A",
+"groups":"N/A",
+"news":"N/A"
+}
+]

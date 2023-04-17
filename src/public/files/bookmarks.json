@@ -1,0 +1,20 @@
+[{
+"title":"Software development",
+"nodes":[
+    {"title":"GitHub", "text":"GitHub", "url":"https://github.com/","img_src":"Software-development/github.com.webp"},
+    {"title":"Stack Overflow", "text":"Where Developers Learn, Share, &amp; Build Careers", "url":"https://stackoverflow.com/","img_src":"Software-development/stackoverflow.webp"}
+]},{
+"title":"Online learning",
+"nodes":[
+    {"title":"Udacity", "text":"Learn the Latest Tech Skills; Advance Your Career", "url":"https://www.udacity.com/","img_src":"Online-learning/edx.org.webp"},
+    {"title":"edX", "text":"Build new skills. Advance your career", "url":"https://www.edx.org/","img_src":"Online-learning/www.udacity.png"}
+]},{
+"title":"Telegram Channels",
+"nodes":[
+    {"title":"Courses", "text":"قناة تهتم بنشر كل جديد في عالم الكورسات المجانية والمدفوعة مجانا", "url":"https://t.me/coursescode","img_src":"Telegram-channels/courses.jpg"}
+]},{
+"title":"Youtube Channels",
+"nodes":[
+    {"title":"Amigoscode", "text":"Amigoscode", "url":"https://www.youtube.com/c/amigoscode","img_src":"Youtube-channels/youtube.webp"}
+]}
+]

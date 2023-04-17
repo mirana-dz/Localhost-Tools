@@ -1,0 +1,198 @@
+PHP Projectworlds 1.0
+inurl:quicklinks.aspx
+inurl:wp-content/plugins/Ultimate-member
+inurl:/wp-content/plugins/wpdiscuz/
+inurl:wp-content/plugins/1-flash-gallery
+inurl:"/wp-content/plugins/123ContactForm
+inurl:"wp-content/plugins/wp-super-edit/superedit/" | inurl:"wp-content/plugins/wp-super-edit/superedit/tinymce_plugins/mse/fckeditor/editor/filemanager/upload/"
+citsmart.local
+inurl:"telerik.web.ui.webresource.axd?type=rau"
+inurl:"/lib/editor/atto/plugins/managefiles/" | inurl:"calendar/view.php?view=month"
+inurl:/ics?tool=search
+inurl:/calendar/calendar_form.php
+Powered By Best Support System
+inurl:"/wp-content/plugins/super-forms/"
+inurl:uno.php
+inurl:"/console/login/LoginForm.jsp"
+machform inurl:"view.php"
+intext:"Incom CMS 2.0"
+inurl:/cgi-bin/manlist?section
+inurl:/pro_users/login
+inurl:/wp-content/themes/altair/
+Powered by vBulletin(R) Version 5.6.3
+intitle:"Please Login" "Use FTM Push"
+inurl:opac_css
+inurl:"woocommerce-exporter"
+intitle:"Powered by Pro Chat Rooms"
+Server: Mida eFramework
+intitle:"Sphider Admin Login"
+inurl:/wp-content/plugins/wp-file-manager/readme.txt
+intext:"Published with Textpattern CMS"
+intext:"Powered by Piwigo"
+intext:"Powered by Typesetter"
+inurl:"images/lists?cid=13"
+inurl:device ext:rsp
+inurl:"/wp-content/plugins/wp-file-manager/lib/php/connector.minimal.php" - Wordpress File Manager
+inurl: login.rsp
+inurl:''com_gmapfp''
+inurl:wp-content/plugins/wpdiscuz
+inurl:wp-content/plugins/easy-media-gallery-pro
+inurl:"/vam/index_vam_op.php"
+intitle:ePMP 1000 intext:Log In -site:*.com -site:com.*
+inurl:wp-content/plugins/updraftplus
+inurl:wp-content/plugins/my-calendar
+inurl:wp-content/plugins/redirection
+Index of : wp-content/plugins/wpmudev-updates/
+inurl:wp-content/plugins/sfwd-lms
+inurl:wp-content/plugins/safe-svg
+inurl:wp-content/plugins/arforms
+inurl:wp-content/plugins/iwp-client
+inurl:wp-content/plugins/email-subscribers
+inurl:wp-content/plugins/idx-broker-platinum
+inurl:wp-content/plugins/all-in-one-wp-migration
+inurl:wp-content/plugins/lifterlms
+inurl:wp-content/plugins/wpjobboard
+inurl:wp-content/plugins/async-javascript
+inurl:wp-content/plugins/sendpress
+inurl:wp-content/plugins/wd-google-maps
+inurl:wp-content/plugins/gravityforms
+inurl:wp-content/plugins/angwp
+inurl:wp-content/plugins/knight-lab-timelinejs
+inurl:wp-content/plugins/wise-chat
+allintext: wp-content/themes/injob
+inurl:wp-content/themes/corona
+inurl:/wp-content/plugins/angwp
+inurl:wp-content/plugins/knight-lab-timelinejs
+allintext:wp-content/plugins/angwp
+inurl:/wp-content/themes/realestate-7
+inurl:wp-content/plugins/kingcomposer
+inurl:wp-content/plugins/angwp
+inurl:wp-content/plugins/newsletter
+inurl:wp-content/plugins/form-maker
+inurl:wp-content/plugins/wp-live-chat-support
+allintext:wp-content/plugins/acf-to-rest-api
+inurl:wp-content/themes/sparky
+inurl:wp-content/themes/careerfy
+inurl:wp-content/plugins/wp-jobsearch
+inurl:wp-content/themes/careerup
+inurl:wp-content/plugins/wpforms-lite
+inurl:wp-content/plugins/testimonials-widget
+inurl:wp-content/plugins/security-malware-firewall
+inurl:wp-content/themes/nexos
+inurl:wp-content/plugins/payment-form-for-paypal-pro
+inurl:wp-content/themes/traveler
+intext:piwik "Sign in"
+inurl:wp-content/plugins/gift
+inurl:wp-content/plugins/form-maker
+inurl:wp-content/plugins/coming-soon
+intitle:"IceWarp WebClient"
+intext:Powered by 2Moons 2009-2013
+intext:"Centreon 2005-2019"
+inurl:wp-content/themes/traveler
+inurl:wp-content/themes/citybook
+inurl:wp-content/plugins/wpDiscuz
+inurl:wp-content/plugins/ar-contactus
+inurl:/webmail intext:Tecnologia fornecida por IceWarp Server
+inurl:wp-content/plugins/YITH-WooCommerce-Ajax-Product-Filter
+inurl:wp-content/plugins/wp-pro-quiz
+intext:Basato su IceWarp Server
+intitle:qdPM 9.1. Copyright (c) 2020 qdpm.net
+inurl:wp-content/plugins/testimonial-rotator
+intext:Basato su Comunicazioni Integrate IceWarp
+intext:"TopManage (R) 2002 - 2020"
+inurl:wp-content/plugins/kingcomposer
+inurl:wp-content/plugins/elementor
+inurl:wp-content/themes/newspaper
+intext:powered by JoomSport - sport WordPress plugin
+index of "plugins/wp-rocket"
+powered by Typo3
+inurl:wp-content/plugins/brizy
+index of /wp-content/uploads/backupbuddy
+inurl:"wp-contentpluginsphoto-gallery"
+inurl:wp-content/plugins/sportspress
+inurl:wp-content/plugins/simple-file-list
+inurl:wp-content/plugins/woocommerce
+inurl:wp-content/plugins/yop-poll
+inurl:wp-content/plugins/mappress-google-maps-for-wordpress
+inurl:wp-content/plugins/ajax-load-more/lang/
+inurl:wp-content/plugins/final-tiles-grid-gallery-lite
+inurl:wp-content/plugins/adrotate
+inurl:wp-content/plugins/final-tiles-grid-gallery-lite
+inurl:wp-content/plugins/yop-poll
+inurl:wp-content/plugins/mappress-google-maps-for-wordpress
+inurl:wp-content/plugins/gtranslate
+inurl:wp-content/plugins/bbPress
+inurl:wp-content/plugins/grand-media
+inurl:wp-content/plugins/woo-order-export-lite
+inurl:wp-content/plugins/iframe
+inurl:"wp-content/plugins/siteorigin-panels"
+inurl:wp-content/plugins/drag-and-drop-multiple-file-upload-contact-form-7
+inurl:"index.php?option=com_ccnewsletter" inurl:sbid
+inurl:"wp-content/plugins/form-maker"
+inurl:wp-content/plugins/official-mailerlite-sign-up-forms
+inurl:wp-content/plugins/thirstyaffiliates
+intitle:"Index of" intitle:"UserPro" -uploads
+inurl:wp-content/plugins/ajax-load-more
+inurl:wp-content/plugins/paid-memberships-pro
+inurl:wp-content/plugins/visualcomposer
+intext:"Created by John Caruso" intext:"Created with Simple PHP Photo Gallery"
+inurl:"index.php?option=com_jssupportticket"
+LMS v3.0 - Xerone IT
+inurl:"index.php?option=com_fabrik"
+inurl:human.aspx intext:moveit
+inurl:"sites/all/modules/ckeditor" -drupalcode.org
+inurl:wp-content/plugins/wp-product-review
+inurl:wp-content/plugins/easy-login-woocommerce
+inurl:wp-content/plugins/photo-gallery
+inurl:wp-content/plugins/team-members
+inurl:"index.php?option=com_hdwplayer"
+inurl:wp-content/plugins/google-site-kit
+inurl:index.php?option=com_newsfeeds
+inurl:wp-content/plugins/easy-testimonials
+inurl:wp-content/plugins/chopslider
+inurl:wp-content/plugins/page-builder
+inurl:wp-content/plugins/ultimate-elementor
+inurl:wp-content/plugins/elementor-pro
+inurl:"wp-content/plugins/ninja-forms"
+inurl:/wp-content/themes/traveler/
+inurl:/wp-content/themes/fruitful/
+inurl:"wp-content/plugins/learnpress"
+inurl:/wp-content/themes/listingpro/
+index of /wp-content/themes/onetone/
+index of /wp-content/themes/avada
+inurl:/webmail/ intext:Powered by IceWarp Server
+inurl:"/course/jumpto.php?jump="
+intext:"Please Login" inurl:"/remote/login"
+intitle:qdPM 9.1. Copyright (c) 2020 qdpm.net
+inurl:www/delivery filetype:php
+inurl:zdm logon
+inurl:/wp-content/themes/CherryFramework
+intitle:"elFinder 2.1.x"
+inurl:"index.php?option=com_jsjobs"
+intitle:"My Book World Edition - MyBookWorld"
+inurl:"wp-contentpluginsall-in-one-seo-pack"
+intext:"Powered by YouPHPTube"
+Powered by SePortal 2.5
+inurl:php-bin/webclient.php
+filetype:php inurl:"/general/login.php?PHPSESSID="
+inurl:/?op=registration
+Powered by Lanius CMS
+Powered by PHPBack
+Powered By Liferay
+Powered by Podcast Generator
+Powered by sNews CMS
+Powered by Zimplit CMS
+inurl:ReportViewer.aspx
+inurl:/cmsinstall/install ext:aspx
+intitle:"kentico database setup"
+intext:"Please enable JavaScript in your browser before using Citrix Receiver." AND intext:www.citrix.com
+inurl:"index.cfm?action=" intext:"Exception in onError"
+intext:Powered By vBulletin 5.5.4 inurl:forum.
+inurl:zoom.us/j and intext:scheduled for
+inurl:/secure/ContactAdministrators!default.jspa intext:"Request Details" -intext:"Your Jira administrator has not yet configured this contact form"
+intitle:"report" ("qualys" | "acunetix" | "nessus" | "netsparker" | "nmap") filetype:pdf
+site:connect.garmin.com inurl:"/modern/profile/"
+site:connect.garmin.com inurl:"/modern/activity/"
+inurl:dnn.js
+intext:"Powered by 74cms v5.0.1"
+site:www.openbugbounty.org + intext:"Open Redirect" + intext:"Unpatched"

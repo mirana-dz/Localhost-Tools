@@ -1,0 +1,13 @@
+# Exclude files from GitHub's language statistics
+
+_docs/* linguist-documentation
+src/public/files/** linguist-vendored
+src/public/css/* linguist-vendored
+src/public/modules/** linguist-vendored
+src/app/includes/includeASCIISpecialCharacters.php linguist-vendored
+src/app/includes/includeColorTables.php linguist-vendored
+src/app/includes/includeHTTPResponseStatusCodes.php linguist-vendored
+src/app/includes/includeISOCountryList.php linguist-vendored
+src/app/includes/includeTimeZones.php linguist-vendored
+src/app/includes/includeTopLevelDomains.php linguist-vendored
+src/app/includes/includeWindowsVersionNumbers.php linguist-vendored
