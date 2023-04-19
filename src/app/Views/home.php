@@ -3,7 +3,7 @@
     <div class="path">
         <div class="path_text">/</div>
         <div class="angle-right"></div>
-        <div class="path_text">BARBARIS Localhost Tools</div>
+        <div class="path_text">MIRANA-DZ Localhost Tools</div>
         <div class="angle-right"></div>
         <div class="path_text">Home Page</div>
     </div>
