@@ -16,7 +16,7 @@ class CssMinifierController
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $input = trim($_POST['input']);
             ob_start();
-            echo this->minify_css($input);
+            echo $this->minify_css($input);
             $result = ob_get_clean();
             echo $result;
             exit;

@@ -3,7 +3,7 @@
 namespace App\Controllers;
 
 use App\Core\Uploader;
-use App\Vendor\TorrentBencode;
+use App\Libraries\Torrent\TorrentBencode;
 
 class TorrentDecoderController
 {
@@ -108,7 +108,16 @@ class TorrentDecoderController
                 </div> <!--- end tab-3Div --->
             </div> <!--- end pane --->
         </div> <!--- end wrapper --->';
-
+           // for div panel
+            echo "<script> 
+	        function loadScript(url) {
+            $.getScript(url);
+        }
+	
+	loadScript('assets/js/app.js'); 
+	
+	
+	</script>";
             $result = ob_get_clean();
             echo $result;
             exit;

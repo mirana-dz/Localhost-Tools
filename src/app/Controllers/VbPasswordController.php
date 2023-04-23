@@ -11,8 +11,6 @@ class VbPasswordController
         $pageCategory = 'Cryptography Tools';
         $pageDescription = '<p>vBulletin Password Hash Generator.</p>';
 
-        $input = '';
-
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $input = trim($_POST['input']);
             ob_start();

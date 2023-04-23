@@ -2,13 +2,38 @@
 
 namespace App\Core;
 
+/**
+ * Class Uploader
+ *
+ * A class for handling file uploads
+ */
 class Uploader
 {
-    private $uploadDir;
-    private $allowedMimeTypes;
-    private $maxFileSize;
-    private $returnFileData;
+    /*
+     * @var string The directory where the uploaded files will be stored
+     */
+    private string $uploadDir;
+    /**
+     * @var array The allowed MIME types for uploaded files
+     */
+    private array $allowedMimeTypes;
+    /**
+     * @var int The maximum allowed file size in bytes
+     */
+    private int $maxFileSize;
+    /**
+     * @var bool Whether to return the file data instead of saving it to disk
+     */
+    private bool $returnFileData;
 
+    /**
+     * Uploader constructor.
+     *
+     * @param string $uploadDir The directory where the uploaded files will be stored
+     * @param array $allowedMimeTypes The allowed MIME types for uploaded files
+     * @param int $maxFileSize The maximum allowed file size in bytes
+     * @param bool $returnFileData Whether to return the file data instead of saving it to disk
+     */
     public function __construct(string $uploadDir, array $allowedMimeTypes, int $maxFileSize, bool $returnFileData = false)
     {
         $this->uploadDir = $uploadDir;
@@ -17,7 +42,14 @@ class Uploader
         $this->returnFileData = $returnFileData;
     }
 
-    public function uploadFile(string $fileInputName)
+    /**
+     * Uploads a file and returns its filename and extension or file data and extension if $returnFileData is set to true.
+     *
+     * @param string $fileInputName The name of the file input field in the HTML form
+     * @return array The filename and extension or file data and extension of the uploaded file
+     * @throws RuntimeException If the uploaded file has errors or is invalid
+     */
+    public function uploadFile(string $fileInputName): array
     {
         $uploadedFile = $_FILES[$fileInputName];
 
@@ -56,7 +88,6 @@ class Uploader
             return [$fileName, $fileExtension];
         }
     }
-
 }
 
 /*

@@ -1,16 +1,7 @@
-<?php include '../app/includes/header.php'; ?>
-
-    <div class="path">
-        <div class="path_text">/</div>
-        <div class="angle-right"></div>
-        <div class="path_text">MIRANA-DZ Localhost Tools</div>
-        <div class="angle-right"></div>
-        <div class="path_text">Home Page</div>
-    </div>
-
-    <header class="header"><h2 class="home_page_svg">Useful Tools for Developers</h2></header>
-
-<?php echo $pageDescription; ?>
+<?php 
+	include '../app/includes/header.php'; 
+	
+    echo $pageDescription; ?>
 
     <div id="header-search">
         <div class="input-group">

@@ -1,15 +1,31 @@
 <?php
 
+/**
+ * Router class for routing requests to appropriate controllers and methods.
+ */
 class Router
 {
-    private $routes;
+    /*
+     * @var array $routes The list of routes available.
+     */
+    private array $routes;
 
-    public function __construct($routes)
+    /**
+     * Constructor function for the Router class.
+     *
+     * @param array $routes The list of routes available.
+     */
+    public function __construct(array $routes)
     {
         $this->routes = $routes;
     }
 
-    public function route()
+    /**
+     * Route function to process the request and route it to the appropriate controller and method.
+     *
+     * @return void
+     */
+    public function route(): void
     {
         // Get the route from the query string
         $route = $_GET['route'] ?? 'index';

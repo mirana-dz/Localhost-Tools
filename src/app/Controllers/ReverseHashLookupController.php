@@ -2,7 +2,7 @@
 
 namespace App\Controllers;
 
-use App\Vendor\ReverseHashLookup;
+use App\Libraries\ReverseHashLookup;
 
 
 class ReverseHashLookupController
@@ -29,10 +29,11 @@ class ReverseHashLookupController
               </tr>';
             switch ($algorithm) {
                 case 'md5':
-                    list($reverseGromWeb, $md5Decrypt, $hashToolKit) = $ReverseHashLookup->reverseMd5Hash($inputData);
+                    list($reverseGromWeb, $md5Decrypt, $hashToolKit, $nitrxgenMd5Db) = $ReverseHashLookup->reverseMd5Hash($inputData);
                     echo '<tr><td>reverseGromWeb</td><td>' . $reverseGromWeb . '</td></tr>';
                     echo '<tr><td>md5Decrypt</td><td>' . $md5Decrypt . '</td></tr>';
                     echo '<tr><td>hashToolKit</td><td>' . $hashToolKit . '</td></tr>';
+					echo '<tr><td>nitrxgenMd5Db</td><td>' . $nitrxgenMd5Db . '</td></tr>';
                     break;
                 case 'sha1':
                     list($reverseGromWeb, $md5Decrypt, $hashToolKit) = $ReverseHashLookup->reverseSha1Hash($inputData);

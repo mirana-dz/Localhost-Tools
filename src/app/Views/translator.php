@@ -66,7 +66,9 @@ $form->html('<div class="language-select-container">
 $form->textarea('input', 'Input:');
 $form->button('action', 'translate', 'Translate', array('class' => 'button'));
 $form->copyDownloadButton();
+$form->html('<div class="result-container">');
 $form->textarea('result-display', 'Output:');
+$form->html('</div>');
 echo $form->render();
 
 include '../app/includes/footer.php'; ?>

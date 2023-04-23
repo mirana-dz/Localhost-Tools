@@ -1,0 +1,141 @@
+@font-face {
+    font-family: 'Font Awesome 6 Free';
+    src: url('../fonts/fontawesome-6.1.1-web/webfonts/fa-solid-900.woff2') format('woff2'), /* Modern Browsers */ url('../fonts/fontawesome-6.1.1-web/webfonts/fa-solid-900.ttf') format('truetype'); /* Safari, Android, iOS */
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Font Awesome brands Free';
+    src: url('../fonts/fontawesome-6.1.1-web/webfonts/fa-brands-400.woff2') format('woff2'), /* Modern Browsers */ url('../fonts/fontawesome-6.1.1-web/webfonts/fa-brands-400.ttf') format('truetype'); /* Safari, Android, iOS */
+    font-display: swap;
+}
+
+.angle-right::after {
+    align-items: center;
+    color: rgb(96, 96, 96);
+    content: "";
+    display: flex;
+    font-family: "Font Awesome 6 Free", serif;
+    font-size: 0.8em;
+    font-weight: 900;
+    height: 32px;
+    justify-content: center;
+    width: 20px;
+}
+
+.home_page_svg::before {
+    color: rgb(3, 116, 168);
+    content: "";
+    font-family: "Font Awesome 6 Free", serif;
+    font-size: 1em;
+    font-weight: 900;
+    margin-right: 15px;
+}
+
+.about_svg::before {
+    color: rgb(3, 169, 244);
+    content: "";
+    font-family: "Font Awesome 6 Free", serif;
+    font-size: 1em;
+    font-weight: 900;
+    margin-right: 15px;
+}
+
+.encoding_decoding_tools_svg::before {
+    color: rgb(0, 150, 136);
+    content: "";
+    font-family: "Font Awesome 6 Free", serif;
+    font-size: 1em;
+    font-weight: 900;
+    margin-right: 15px;
+}
+
+.cryptography_tools_svg::before {
+    color: rgb(76, 175, 80);
+    content: "";
+    font-family: "Font Awesome 6 Free", serif;
+    font-size: 1em;
+    font-weight: 900;
+    margin-right: 15px;
+}
+
+.web_development_tools_svg::before {
+    color: rgb(227, 76, 38);
+    content: "";
+    font-family: "Font Awesome 6 Free", serif;
+    font-size: 1em;
+    font-weight: 900;
+    margin-right: 15px;
+}
+
+.images_tools_svg::before {
+    color: rgb(33, 150, 243);
+    content: "";
+    font-family: "Font Awesome 6 Free", serif;
+    font-size: 1em;
+    font-weight: 900;
+    margin-right: 15px;
+}
+
+.miscellaneous_tools_svg::before {
+    color: rgb(255, 245, 99);
+    content: "";
+    font-family: "Font Awesome 6 Free", serif;
+    font-size: 1em;
+    font-weight: 900;
+    margin-right: 15px;
+}
+
+.documentation_svg::before {
+    color: rgb(10, 170, 133);
+    content: "";
+    font-family: "Font Awesome 6 Free", serif;
+    font-size: 1em;
+    font-weight: 900;
+    margin-right: 15px;
+}
+
+.network_tools_svg::before {
+    color: rgb(46, 139, 87);
+    content: "";
+    font-family: "Font Awesome 6 Free", serif;
+    font-size: 1em;
+    font-weight: 900;
+    margin-right: 15px;
+}
+
+.pentesting_tools_svg::before {
+    color: rgb(139, 0, 0);
+    content: "";
+    font-family: "Font Awesome 6 Free", serif;
+    font-size: 1em;
+    font-weight: 900;
+    margin-right: 15px;
+}
+
+.osint_tools_svg::before {
+    color: rgb(26, 70, 201);
+    content: "";
+    font-family: "Font Awesome 6 Free", serif;
+    font-size: 1em;
+    font-weight: 900;
+    margin-right: 15px;
+}
+
+.related_tools_svg::before {
+    color: rgb(35, 137, 221);
+    content: "";
+    font-family: "Font Awesome 6 Free", serif;
+    font-size: 1em;
+    font-weight: 900;
+    margin-right: 15px;
+}
+
+.ai_tools_svg::before {
+    color: rgb(116, 170, 156);
+    content: "";
+    font-family: "Font Awesome 6 Free", serif;
+    font-size: 1em;
+    font-weight: 900;
+    margin-right: 15px;
+}

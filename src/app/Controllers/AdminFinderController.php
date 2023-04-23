@@ -25,7 +25,7 @@ class AdminFinderController
             // if ($headers[0] == 'HTTP/1.1 200 OK') {
             if ($httpCode == 200) {
                 //TODO
-                $outputFilePath = dirname(__FILE__, 2) . DIRECTORY_SEPARATOR . 'output' . DIRECTORY_SEPARATOR . 'adminFinder.txt';
+                $outputFilePath = dirname(__FILE__, 2) . DIRECTORY_SEPARATOR . 'outputs' . DIRECTORY_SEPARATOR . 'adminFinder.txt';
                 $outputFile = fopen($outputFilePath, 'a') or die('Unable to open file!');
                 $txt = $link . "\n";
                 fputs($outputFile, $txt);
@@ -41,6 +41,6 @@ class AdminFinderController
             exit;
         }
 
-        require_once('../app/views/admin_finder.php');
+require_once('../app/views/admin_finder.php');
     }
 }

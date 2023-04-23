@@ -113,11 +113,11 @@ echo $pageDescription;
         }
 
         input.ui-autocomplete-loading {
-            background: url("images/blue-loading.gif") right center no-repeat;
+            background: url("assets/images/blue-loading.gif") right center no-repeat;
         }
 
     </style>
-    <script src="modules/jquery-ui-1.13.1/jquery-ui.min.js"></script>
+    <script src="assets/modules/jquery-ui-1.13.1/jquery-ui.min.js"></script>
     <script>
         function searchByTerm() {
             const input = $('#dorksList').val();
@@ -246,9 +246,9 @@ echo $pageDescription;
                             href="https://www.exploit-db.com/google-hacking-database"
                             title="Google Hacking Database" target="_blank">Google Hacking Database</a>).</p>
                 <form id="dorksByTerm" name="inputForm">
-                    <label for="dorksList" class="field-label block">Search term</label>
+                    <label for="dorksList" class="form-label">Search term</label>
                     <input type="text" name="input" id="dorksList" value="">
-                    <label for="selectOption" class="field-label block">Category</label>
+                    <label for="selectOption" class="form-label">Category</label>
                     <div class="selectDiv">
                         <select id="selectCategory" name="selectCategory">
                             <option value="google_dorks_all_cat" selected>All Category</option>
@@ -277,10 +277,10 @@ echo $pageDescription;
             <div id="tab-2Div" class="tab-content" style="display:none;">
                 <p>Find juicy information indexed by Google about a target website such as directory listing,
                     sensitive files, error messages, login pages, and more. </p>
-                <label for="inputTarget" class="field-label block">Target</label>
+                <label for="inputTarget" class="form-label">Target</label>
                 <input type="text" name="inputTarget" id="inputTarget" placeholder="www.example.com"
                        value="">
-                <label for="selectOption" class="field-label block">Google Dorks</label>
+                <label for="selectOption" class="form-label">Google Dorks</label>
                 <div class="selectDiv">
                     <select id="selectDork" name="selectDork">
                         <option value="1" selected>Publicly exposed documents</option>
@@ -309,7 +309,7 @@ echo $pageDescription;
 
                 <div class="search-wrapper">
                     <span class="close-icon"></span>
-                    <label for="inputBuilder" class="field-label block">Search</label>
+                    <label for="inputBuilder" class="form-label">Search</label>
                     <input type="text" name="inputBuilder" id="inputBuilder" value="">
                     <input type="button" id="searchBtn" name="searchBtn" value="Search" class="button margin-top"
                            onclick="searchByBuilder()">

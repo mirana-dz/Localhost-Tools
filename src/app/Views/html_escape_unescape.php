@@ -8,7 +8,9 @@ $form->textarea('input', 'Input:');
 $form->button('action', 'escape', 'Escape', array('class' => 'button'));
 $form->button('action', 'unescape', 'Unescape', array('class' => 'button'));
 $form->copyDownloadButton();
+$form->html('<div class="result-container">');
 $form->textarea('result-display', 'Output:');
+$form->html('</div>');
 echo $form->render();
 
 include '../app/includes/footer.php'; ?>

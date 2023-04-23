@@ -13,7 +13,9 @@ $form->select('functions', 'Select nested functions combination to encode the PH
 ), 'obfu1');
 $form->button('action', 'obfuscate', 'Obfuscate', array('class' => 'button'));
 $form->copyDownloadButton();
+$form->html('<div class="result-container">');
 $form->textarea('result-display', 'Output:');
+$form->html('</div>');
 echo $form->render();
 
 include '../app/includes/footer.php'; ?>

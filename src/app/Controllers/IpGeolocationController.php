@@ -2,6 +2,8 @@
 
 namespace App\Controllers;
 
+use Exception;
+
 class IpGeolocationController
 {
 
@@ -48,8 +50,8 @@ class IpGeolocationController
 
     private function ipApiJson($ipAddress): array
     {
-        // if (!filter_var($ipAddress, FILTER_VALIDATE_IP))
-        //   throw new Exception("$ipAddress is not a valid IP address");
+         if (!filter_var($ipAddress, FILTER_VALIDATE_IP))
+           throw new Exception("$ipAddress is not a valid IP address");
 
         $getApiJson = @file_get_contents("http://ip-api.com/json/" . $ipAddress);
 

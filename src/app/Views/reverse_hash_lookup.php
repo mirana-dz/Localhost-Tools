@@ -19,6 +19,6 @@ $form->select('algorithm', 'Select algorithm:', array(
 $form->button('action', 'reverse', 'Reverse', array('class' => 'button'));
 echo $form->render();
 
-echo '<div id="result-display"></div>';
+echo '<div class="result-container"><div id="result-display"></div></div>';
 
 include '../app/includes/footer.php'; ?>

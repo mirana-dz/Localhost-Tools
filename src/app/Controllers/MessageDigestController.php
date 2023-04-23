@@ -7,7 +7,7 @@ class MessageDigestController
     public function index()
     {
 
-        $pageTitle = 'Message Digest (MD5, MD4, MD2, ...)';
+        $pageTitle = 'Message Digest & SHA (MD5, MD4, MD2, ...)';
         $pageCategory = 'Cryptography Tools';
         $pageDescription = '<p>Computes a digest from a string using different algorithms. Supported algorithms are MD2, MD4, MD5, SHA1, ... etc.</p>';
 

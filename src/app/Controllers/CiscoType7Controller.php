@@ -59,8 +59,12 @@ class CiscoType7Controller
             $output[] = ord($char) ^ $key;
             $key = ord($char);
         }
-
+		if (isset($output)) {
         $output = implode('', array_map('chr', $output));
         return $output;
+		} else {
+		//TODO
+		return 'This one is NOT cisco type 7';
+		}
     }
 }

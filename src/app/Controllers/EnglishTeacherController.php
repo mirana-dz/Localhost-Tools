@@ -2,7 +2,7 @@
 
 namespace App\Controllers;
 
-use App\Vendor\OpenAI_API_Client;
+use App\Libraries\OpenAI_API_Client;
 
 class EnglishTeacherController
 {

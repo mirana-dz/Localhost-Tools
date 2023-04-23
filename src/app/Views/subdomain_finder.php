@@ -11,6 +11,6 @@ $form->html('</div>');
 echo $form->render();
 
 echo '<div id="validate-error"></div>';
-echo '<div id="result-display"></div>';
-
+echo '<hr><br><br>';
+echo '<div class="result-container"><div id="result-display"></div></div>';
 include '../app/includes/footer.php'; ?>

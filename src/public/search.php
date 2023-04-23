@@ -6,6 +6,8 @@ $searchData = array();
 // Encoding/Decoding Tools
 $searchData[] = array('id' => 'Base64 Encoder', 'url' => '?route=base64_encoder_decoder');
 $searchData[] = array('id' => 'Base64 Decoder', 'url' => '?route=base64_encoder_decoder');
+$searchData[] = array('id' => 'Base32 Encoder', 'url' => '?route=base64_encoder_decoder');
+$searchData[] = array('id' => 'Base32 Decoder', 'url' => '?route=base64_encoder_decoder');
 $searchData[] = array('id' => 'URL Encoder', 'url' => '?route=url_encoder_decoder');
 $searchData[] = array('id' => 'URL Decoder', 'url' => '?route=url_encoder_decoder');
 $searchData[] = array('id' => 'UU Encoder', 'url' => '?route=uu_encoder_decoder');
@@ -29,14 +31,17 @@ $searchData[] = array('id' => 'Message Digest - SHA224', 'url' => '?route=messag
 $searchData[] = array('id' => 'Message Digest - SHA256', 'url' => '?route=message_digest');
 $searchData[] = array('id' => 'Message Digest - SHA384', 'url' => '?route=message_digest');
 $searchData[] = array('id' => 'Message Digest - SHA512', 'url' => '?route=message_digest');
+$searchData[] = array('id' => 'Hash Generator', 'url' => '?route=hash_generator');
 $searchData[] = array('id' => 'HMAC Generator', 'url' => '?route=hmac_generator');
 $searchData[] = array('id' => 'CRC32 Generator', 'url' => '?route=crc32_generator');
 $searchData[] = array('id' => 'CRC32B Generator', 'url' => '?route=crc32_generator');
+$searchData[] = array('id' => 'CRC32C Generator', 'url' => '?route=crc32_generator');
 $searchData[] = array('id' => 'Password Generator', 'url' => '?route=password_generator');
 $searchData[] = array('id' => 'Cisco Type 7 Password Encrypt', 'url' => '?route=cisco_type_7');
 $searchData[] = array('id' => 'Cisco Type 7 Password Decrypt', 'url' => '?route=cisco_type_7');
 $searchData[] = array('id' => 'Joomla Password Generator', 'url' => '?route=joomla_password_generator');
 $searchData[] = array('id' => 'Vb Password Generator', 'url' => '?route=vb_Password_generator');
+$searchData[] = array('id' => 'Drupal Password Generator', 'url' => '?route=drupal_password_generator');
 $searchData[] = array('id' => 'Htpasswd Generator', 'url' => '?route=htPasswd_generator');
 $searchData[] = array('id' => 'Reverse Hash Lookup', 'url' => '?route=reverse_hash_lookup');
 // Web Development Tools
@@ -63,6 +68,7 @@ $searchData[] = array('id' => 'imgur Image uploader', 'url' => '?route=share_ima
 $searchData[] = array('id' => 'IP Address Converter', 'url' => '?route=ip_address_converter');
 $searchData[] = array('id' => 'HTTP Header Status Checker', 'url' => '?route=http_header_status_checker');
 $searchData[] = array('id' => 'Ping Tool', 'url' => '?route=ping_tool');
+$searchData[] = array('id' => 'Ports List', 'url' => '?route=ports_list');
 $searchData[] = array('id' => 'IP Geolocation', 'url' => '?route=ip_geolocation');
 $searchData[] = array('id' => 'Whois Lookup', 'url' => '?route=whois_lookup');
 $searchData[] = array('id' => 'Subdomain Finder', 'url' => '?route=subdomain_finder');
@@ -72,6 +78,7 @@ $searchData[] = array('id' => 'Zip Path Traversal', 'url' => '?route=zip_path_tr
 $searchData[] = array('id' => 'Website Malware Checker', 'url' => '?route=website_malware_checker');
 $searchData[] = array('id' => 'Google Dorking', 'url' => '?route=google_dorking');
 $searchData[] = array('id' => 'Default Router Settings', 'url' => '?route=default_router_settings');
+$searchData[] = array('id' => 'Default Credentials', 'url' => '?route=default_credentials');
 // OSINT Tools
 $searchData[] = array('id' => 'Search Engines', 'url' => '?route=search_engines');
 $searchData[] = array('id' => 'Reverse Image Search', 'url' => '?route=reverse_image_search');

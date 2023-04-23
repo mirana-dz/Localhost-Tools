@@ -1,15 +1,12 @@
 <?php include '../app/includes/header.php'; ?>
 
-    <div class="form_radio_group">
-        <div class="form_radio_group-item">
-            <input id="radio-1" type="radio" name="radio" value="1" disabled>
-            <label for="radio-1">Encoder</label>
-        </div>
-        <div class="form_radio_group-item">
+<div class="nav float-right">
+            <input id="radio-1" type="radio" name="radio" value="1" checked>
+            <label for="radio-1" class="radioLabel">Encoder</label>
+    
             <input id="radio-2" type="radio" name="radio" value="2">
-            <label for="radio-2">Decoder</label>
-        </div>
-    </div>
+            <label for="radio-2" class="radioLabel">Decoder</label>
+</div>
 
     <div id="image-to-base64">
         <?php
@@ -31,7 +28,9 @@
         ), 'html_img');
         $form->button('action', 'encode', 'Encode', array('class' => 'button'));
         $form->copyDownloadButton();
+        $form->html('<div class="result-container">');
         $form->textarea('result-display', 'Output:');
+		$form->html('</div>');
         echo $form->render();
         ?>
         <br>
@@ -43,7 +42,7 @@
     <div id="base64-to-image" style="display:none;">
         <p>Converts a Base64 string to an image by pasting a Base64 string in the input field. The output image will
             show up instantly.</p>
-        <label class="field-label block" for="text_result">Input Base64</label><textarea id="input_string"
+        <label class="form-label" for="text_result">Input Base64:</label><textarea id="input_string"
                                                                                          name="input_string"
                                                                                          rows="7"></textarea>
         <br><br>
@@ -91,8 +90,8 @@
         }
     </script>
 
-    <script src="js/custom-file-input.js"></script>
-    <link href="css/custom-file-input.css" rel="stylesheet" type="text/css">
+    <script src="assets/js/custom-file-input.js"></script>
+    <link href="assets/css/custom-file-input.css" rel="stylesheet" type="text/css">
 
 <?php
 include '../app/includes/footer.php'; ?>

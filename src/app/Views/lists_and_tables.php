@@ -1,7 +1,7 @@
 <?php include '../app/includes/header.php'; ?>
 
-    <link href="modules/prism.js/prism.css" rel="stylesheet"/>
-    <script src="modules/prism.js/prism.js"></script>
+    <link href="assets/modules/prism.js/prism.css" rel="stylesheet"/>
+    <script src="assets/modules/prism.js/prism.js"></script>
 
 <?php
 //echo $pageDescription;

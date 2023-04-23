@@ -2,17 +2,29 @@
 
 //namespace App\Core;
 
+/**
+ * Class Form
+ *
+ * Represents an HTML form with fields and buttons.
+ */
 class Form
 {
-    private $method;
-    private $action;
-    private $id;
-    private $name;
-    private $fields;
-    private $hasFileField;
+    private string $method;
+    private ?string $action;
+    private string $id;
+    private string $name;
+    private array $fields;
+    private bool $hasFileField;
 
-
-    public function __construct($method, $id, $name, $action = null)
+    /**
+     * Constructs a new instance of the Form class.
+     *
+     * @param string $method The HTTP method used for submitting the form (e.g. 'GET', 'POST').
+     * @param string $id The unique identifier for the form.
+     * @param string $name The name of the form.
+     * @param string|null $action The URL to which the form data will be submitted.
+     */
+    public function __construct(string $method, string $id, string $name, string $action = null)
     {
         $this->method = $method;
         $this->id = $id;
@@ -22,7 +34,17 @@ class Form
         $this->hasFileField = false;
     }
 
-    public function input($name, $label, $type, $options = array(), $checked = false)
+    /**
+     * Adds an input field to the form.
+     *
+     * @param string $name The name of the input field.
+     * @param string $label The label for the input field.
+     * @param string $type The type of the input field.
+     * @param array $options An array of additional options for the input field.
+     * @param bool $checked Whether the checkbox input is checked or not.
+     * @return void
+     */
+    public function input(string $name, string $label, string $type, array $options = array(), bool $checked = false): void
     {
         $field = array(
             'label' => $label,
@@ -36,7 +58,15 @@ class Form
         $this->fields[$name] = $field;
     }
 
-    public function textarea($name, $label, $options = array())
+    /**
+     * Adds a textarea field to the form.
+     *
+     * @param string $name The name of the textarea field.
+     * @param string $label The label for the textarea field.
+     * @param array $options An array of additional options for the textarea field.
+     * @return void
+     */
+    public function textarea(string $name, string $label, array $options = array()): void
     {
         $this->fields[$name] = array(
             'label' => $label,
@@ -45,7 +75,16 @@ class Form
         );
     }
 
-    public function select($name, $label, $options, $selected = null)
+    /**
+     * Adds a select field to the form.
+     *
+     * @param string $name The name of the select field.
+     * @param string $label The label for the select field.
+     * @param array $options An array of options for the select field.
+     * @param mixed|null $selected The selected option for the select field.
+     * @return void
+     */
+    public function select(string $name, string $label, array $options, mixed $selected = null): void
     {
         $field = array(
             'label' => $label,
@@ -58,14 +97,28 @@ class Form
         $this->fields[$name] = $field;
     }
 
-    public function copyDownloadButton()
+    /**
+     * Adds a copy/download button to the form.
+     *
+     * @return void
+     */
+    public function copyDownloadButton(): void
     {
         $this->fields[] = array(
             'type' => 'copyDownloadButton'
         );
     }
 
-    public function button($name, $value, $label, $options = array())
+    /**
+     * Adds a button to the form.
+     *
+     * @param string $name The name of the button.
+     * @param string $value The value of the button.
+     * @param string $label The label for the button.
+     * @param array $options An array of additional options for the button.
+     * @return void
+     */
+    public function button(string $name, string $value, string $label, array $options = array()): void
     {
         $this->fields[] = array(
             'type' => 'button',
@@ -76,7 +129,13 @@ class Form
         );
     }
 
-    public function html($html)
+    /**
+     * Adds raw HTML to the form.
+     *
+     * @param string $html The HTML code to add to the form.
+     * @return void
+     */
+    public function html(string $html): void
     {
         $this->fields[] = array(
             'type' => 'html',
@@ -84,7 +143,12 @@ class Form
         );
     }
 
-    public function render()
+    /**
+     * Renders a form HTML string.
+     *
+     * @return string The HTML string of the form.
+     */
+    public function render(): string
     {
         $html = '<form method="' . $this->method . '" id="' . $this->id . '" name="' . $this->name . '" action="' . $this->action . '"';
 
@@ -102,9 +166,8 @@ class Form
         $html .= '>';
 
         foreach ($this->fields as $name => $field) {
-            // $html .= '<div class="form-group">';
             if ($field['type'] != 'button' & $field['type'] != 'copyDownloadButton' & $field['type'] != 'html') {
-                $html .= '<label for="' . $name . '">' . $field['label'] . '</label>';
+                $html .= '<label for="' . $name . '" class="form-label">' . $field['label'] . '</label>';
             }
             switch ($field['type']) {
                 case 'text':
@@ -177,10 +240,7 @@ class Form
                 case 'html':
                     $html .= $field['html'];
                     break;
-
             }
-
-            // $html .= '</div>';
         }
 
         $html .= '</form>';
@@ -188,7 +248,6 @@ class Form
         return $html;
     }
 }
-
 
 /*
 <?php
@@ -212,6 +271,4 @@ $form->button('action', 'encode', 'Encode to Base64');
 // render the form
 echo $form->render();
 ?>
-
-
 */

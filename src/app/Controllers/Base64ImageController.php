@@ -6,7 +6,6 @@ use App\Core\Uploader;
 
 class Base64ImageController
 {
-
     public function index()
     {
 
@@ -44,7 +43,6 @@ class Base64ImageController
 
     private function uploadFileAction()
     {
-
         // $uploadDir = 'uploads';
         $allowedMimeTypes = ['image/jpeg', 'image/png'];
         $maxFileSize = 5 * 1024 * 1024; // 5 MB

@@ -22,19 +22,19 @@ class IpAddressConverterController
                 $hex_format = '0x' . dechex($decimal_format);
                 $octal_format = decoct($decimal_format);
                 $ipv4_to_ipv6 = $this->convert_ipv4_to_ipv6($input);
-                echo '<label class="field-label block" for="standard_format">Standard Format:</label>
+                echo '<label class="form-label" for="standard_format">Standard Format:</label>
 <input type="text" id="standard_format" name="standard_format" class="doSelect" value="' . $input . '">
-<label class="field-label block" for="decimal_format">Decimal Format:</label>
+<label class="form-label" for="decimal_format">Decimal Format:</label>
 <input type="text" id="decimal_format" name="decimal_format" class="doSelect" value="' . $decimal_format . '">
-<label class="field-label block" for="binary_format">Binary Format:</label>
+<label class="form-label" for="binary_format">Binary Format:</label>
 <input type="text" id="binary_format" name="binary_format" class="doSelect" value="' . $binary_format . '">
-<label class="field-label block" for="hex_format">Hexadecimal Format:</label>
+<label class="form-label" for="hex_format">Hexadecimal Format:</label>
 <input type="text" id="hex_format" name="hex_format" class="doSelect" value="' . $hex_format . '">
-<label class="field-label block" for="octal_format">Octal Format:</label>
+<label class="form-label" for="octal_format">Octal Format:</label>
 <input type="text" id="octal_format" name="octal_format" class="doSelect" value="' . $octal_format . '">
-<label class="field-label block" for="ipv6_short">IPv6 (short):</label>
+<label class="form-label" for="ipv6_short">IPv6 (short):</label>
 <input type="text" id="ipv6_short" name="ipv6_short" class="doSelect" value="' . $ipv4_to_ipv6['short'] . '">
-<label class="field-label block" for="ipv6_long">IPv6 (long):</label>
+<label class="form-label" for="ipv6_long">IPv6 (long):</label>
 <input type="text" id="ipv6_long" name="ipv6_long" class="doSelect" value="' . $ipv4_to_ipv6['long'] . '"><br><br>';
             } else {
                 echo '... is not a valid IPv4 address';

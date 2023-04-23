@@ -19,7 +19,7 @@ echo $pageDescription;
             margin-bottom: 5px;
         }
 
-        .arrow::before {
+.arrow::before {
             content: "\2193\2193\2193\2193\2193\2193\2193\2193\2193\2193\2193\2193\2193\2193\2193\2193\2193\2193\2193\2193\2193\2193";
             font-family: monospace;
             white-space: pre;
@@ -66,7 +66,9 @@ $form->textarea('input', 'Input:');
 $form->button('action', 'encrypt', 'Encrypt', array('class' => 'button'));
 $form->button('action', 'decrypt', 'Decrypt', array('class' => 'button'));
 $form->copyDownloadButton();
+$form->html('<div class="result-container">');
 $form->textarea('result-display', 'Output:');
+$form->html('</div>');
 echo $form->render();
 
 include '../app/includes/footer.php'; ?>

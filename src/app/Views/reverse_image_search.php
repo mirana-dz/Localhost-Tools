@@ -16,7 +16,7 @@
             a.link {
                 display: inline-flex;
                 text-align: center;
-                color: #000;
+                color: #693;
                 text-decoration: none;
                 padding: 10px;
             }
@@ -84,9 +84,12 @@
                     bing = 'https://www.bing.com/images/search?view=detailv2&iss=sbi&form=SBIIRP&sbisrc=UrlPaste&q=imgurl:' + imageUrl,
                     yandex = 'https://yandex.com/images/search?source=collections&rpt=imageview&url=' + imageUrl;
 
-                $('#google').prepend('<a class="link" href="' + google + '" target="_blank"><img src="images/icons/google.png" alt="google" width="90" height="90" style="float: left;"><p>Similar Images according to Google</p></a>');
-                $('#bing').prepend('<a class="link" href="' + bing + '" target="_blank"><img src="images/icons/bing.png" alt="bing.png" width="90" height="90" style="float: left;"><p>Similar Images according to Bing</p></a>');
-                $('#yandex').prepend('<a class="link" href="' + yandex + '" target="_blank"><img src="images/icons/yandex.png" alt="yandex" width="90" height="90" style="float: left;"><p>Similar Images according to Yandex</p></a>');
+$('#google').empty(); 
+$('#bing').empty(); 
+$('#yandex').empty(); 
+                $('#google').prepend('<a class="link" href="' + google + '" target="_blank"><img src="assets/images/icons/google.png" alt="google" width="90" height="90" style="float: left;"><p>Similar Images according to Google</p></a>');
+                $('#bing').prepend('<a class="link" href="' + bing + '" target="_blank"><img src="assets/images/icons/bing.png" alt="bing.png" width="90" height="90" style="float: left;"><p>Similar Images according to Bing</p></a>');
+                $('#yandex').prepend('<a class="link" href="' + yandex + '" target="_blank"><img src="assets/images/icons/yandex.png" alt="yandex" width="90" height="90" style="float: left;"><p>Similar Images according to Yandex</p></a>');
             });
         }
 
@@ -112,22 +115,37 @@ $form->select('option', 'Select Search Engine:', array(
 $form->button('action', 'search', 'Search Similar Images', array('class' => 'button', 'onclick' => 'doReverseSearch()'));
 echo $form->render();
 ?>
-
+    <header class="separator marginT20 marginB20"></header>
+	
     <p>Or Select image from your computer ></p>
     <div class="upload_area">
-        <label class="field-label block" for="file">Choose an image to upload</label>
+        <label class="form-label" for="file">Choose an image to upload:</label>
         <input type="file" name="file" id="input_img" onchange="uploadImage()" accept="image/*">
     </div>
+	<!---
     <img id="loadingImg" src="images/loading.gif" class="center" alt="" width="287" height="141"
          style="display:none;">
+	--->	
+	
+<br><br>	
+<div class="result-container">		 
+  <div id="loadingImg" class="loading-indicator" style="display:none;">
+    <svg width="80" height="80" viewBox="0 0 24 24" fill="#A6A7AB" xmlns="http://www.w3.org/2000/svg">
+      <path d="M12,23a9.63,9.63,0,0,1-8-9.5,9.51,9.51,0,0,1,6.79-9.1A1.66,1.66,0,0,0,12,2.81h0a1.67,1.67,0,0,0-1.94-1.64A11,11,0,0,0,12,23Z">
+		  <animateTransform attributeName="transform" type="rotate" calcMode="linear" dur="0.75s" values="0 12 12;360 12 12" repeatCount="indefinite"></animateTransform>
+      </path>
+    </svg>
+  </div>
+		 
+ 
     <div class="section">
         <div id="google" class="section-flex-box"></div>
         <div id="bing" class="section-flex-box"></div>
         <div id="yandex" class="section-flex-box"></div>
     </div>
-
-    <script src="js/custom-file-input.js"></script>
-    <link href="css/custom-file-input.css" rel="stylesheet" type="text/css">
+ </div>
+    <script src="assets/js/custom-file-input.js"></script>
+    <link href="assets/css/custom-file-input.css" rel="stylesheet" type="text/css">
 
 <?php
 include '../app/includes/footer.php'; ?>

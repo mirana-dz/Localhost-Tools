@@ -10,10 +10,11 @@ $form->select('method', 'Method:', array(
     'javascript' => 'Javascript',
     'hex' => 'Hex values'
 ), 'hex');
-
 $form->button('action', 'obfuscate', 'Obfuscate email', array('class' => 'button'));
 $form->copyDownloadButton();
+$form->html('<div class="result-container">');
 $form->textarea('result-display', 'Output:');
+$form->html('</div>');
 echo $form->render();
 
 include '../app/includes/footer.php'; ?>

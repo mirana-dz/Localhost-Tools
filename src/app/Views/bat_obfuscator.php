@@ -6,7 +6,9 @@ $form = new Form('POST', 'my-form', 'inputForm');
 $form->textarea('input', 'Input:');
 $form->button('action', 'obfuscate', 'Obfuscate', array('class' => 'button'));
 $form->copyDownloadButton();
+$form->html('<div class="result-container">');
 $form->textarea('result-display', 'Output:');
+$form->html('</div>');
 echo $form->render();
 
 include '../app/includes/footer.php'; ?>

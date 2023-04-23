@@ -18,7 +18,9 @@ $form->select('algorithm', 'Message Digest:', array(
 
 $form->button('action', 'encode', 'Generate', array('class' => 'button'));
 $form->copyDownloadButton();
+$form->html('<div class="result-container">');
 $form->textarea('result-display', 'Output:');
+$form->html('</div>');
 echo $form->render();
 
 include '../app/includes/footer.php'; ?>

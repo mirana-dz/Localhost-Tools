@@ -3,7 +3,7 @@
 namespace App\Controllers;
 
 use App\Core\Uploader;
-use App\Vendor\ImageConverter;
+use App\Libraries\ImageConverter;
 
 class ImagesConverterController
 {

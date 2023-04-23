@@ -146,7 +146,7 @@ echo $pageDescription; ?>
 
     <div class="search">
         <form name="inputFormFlex" class="search-box">
-            <img class="search-icon" alt="" src="images//search-engines-icons/google.webp">
+            <img class="search-icon" alt="" src="assets/images/search-engines-icons/google.webp">
             <input id="inputSearch" class="sbar" name="input_string" title="Search" type="text" accesskey="s">
             <button type="button" class="button">Search</button>
         </form>
@@ -154,17 +154,17 @@ echo $pageDescription; ?>
         <div class="search-engine">
             <div class="search-engine-head"><strong class="search-engine-tit">Search Engines</strong></div>
             <ul class="search-engine-list">
-                <li><img alt="" src="images/search-engines-icons/google.webp">Google</li>
-                <li><img alt="" src="images/search-engines-icons/bing.webp">Bing</li>
-                <li><img alt="" src="images/search-engines-icons/yandex.webp">Yandex</li>
-                <li><img alt="" src="images/search-engines-icons/www.flickr.png">Flickr</li>
-                <li><img alt="" src="images/search-engines-icons/baidu.webp">Baidu</li>
-                <li><img alt="" src="images/search-engines-icons/imgur.webp">Imgur</li>
-                <li><img alt="" src="images/search-engines-icons/yahoo.webp">Yahoo</li>
-                <li><img alt="" src="images/search-engines-icons/twitter.webp">Twitter</li>
-                <li><img alt="" src="images/search-engines-icons/facbook.webp">Facebook</li>
-                <li><img alt="" src="images/search-engines-icons/instagram.webp">Instagram</li>
-                <li><img alt="" src="images/search-engines-icons/linkedin.webp">Linkedin</li>
+                <li><img alt="" src="assets/images/search-engines-icons/google.webp">Google</li>
+                <li><img alt="" src="assets/images/search-engines-icons/bing.webp">Bing</li>
+                <li><img alt="" src="assets/images/search-engines-icons/yandex.webp">Yandex</li>
+                <li><img alt="" src="assets/images/search-engines-icons/www.flickr.png">Flickr</li>
+                <li><img alt="" src="assets/images/search-engines-icons/baidu.webp">Baidu</li>
+                <li><img alt="" src="assets/images/search-engines-icons/imgur.webp">Imgur</li>
+                <li><img alt="" src="assets/images/search-engines-icons/yahoo.webp">Yahoo</li>
+                <li><img alt="" src="assets/images/search-engines-icons/twitter.webp">Twitter</li>
+                <li><img alt="" src="assets/images/search-engines-icons/facbook.webp">Facebook</li>
+                <li><img alt="" src="assets/images/search-engines-icons/instagram.webp">Instagram</li>
+                <li><img alt="" src="assets/images/search-engines-icons/linkedin.webp">Linkedin</li>
             </ul>
         </div>
     </div>

@@ -8,6 +8,6 @@ $form->input('input', 'Input Domain:', 'text');
 $form->button('action', 'lookUp', 'Look up', array('class' => 'button'));
 echo $form->render();
 
-echo '<div id="result-display"></div>';
+echo '<div class="result-container"><div id="result-display"></div></div>';
 
 include '../app/includes/footer.php'; ?>

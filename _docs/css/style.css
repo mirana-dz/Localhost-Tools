@@ -9,7 +9,7 @@ body {
     font-size: 16px;
     color: rgb(192, 192, 192);
     background-color: #292929;
-    background-image: url("../../src/assets/img/bg_jean.png");
+    background-image: url("../../src/public/assets/images/bg_jean.png");
     height: 100%;
     letter-spacing: 0;
 }
@@ -86,10 +86,10 @@ a {
 }
 
 .center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
 }
 
 #footer {

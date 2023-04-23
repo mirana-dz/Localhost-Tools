@@ -41,11 +41,13 @@ if (isset($pageCategory)) {
 </div> <!-- application_main -->
 
 <div id="footer" class="footer">
-    <p>LOCALHOST TOOLS - <a href="index.php?route=about">MIRANA-DZ</a></p>
+    <p>LOCALHOST TOOLS - <a href="index.php?route=about"><b>MIRANA-DZ</b></a></p>
 </div>
-
-<script src="modules/jquery-validation-1.19.3/dist/jquery.validate.min.js"></script>
-<script src="modules/jquery-validation-1.19.3/dist/additional-methods.min.js"></script>
-<script src="js/form-validation.js"></script>
+<!-- Javascript -->
+<script src="assets/js/app.js"></script>
+<script src="assets/js/FileSaver.js"></script>
+<script src="assets/modules/jquery-validation-1.19.3/dist/jquery.validate.min.js"></script>
+<script src="assets/modules/jquery-validation-1.19.3/dist/additional-methods.min.js"></script>
+<script src="assets/js/form-validation.js"></script>
 </body>
 </html>

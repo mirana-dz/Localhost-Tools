@@ -1,17 +1,17 @@
 English | [العربية](./README-AR.md)
 <div align="center">
-  <img src="src/public/images/mirana-dz_localhost_tools.png" alt="MIRANA-DZ Localhost Tools logo" width="200px" height="70px" />
+  <img src="src/public/assets/images/mirana-dz_localhost_tools.png" alt="MIRANA-DZ Localhost Tools logo" width="200px" height="70px" />
+  <h1>Welcome to Localhost Tools 🧰🛠️</h1>
 </div>
 
-# Localhost Tools
 MIRANA-DZ LOCALHOST TOOLS is a comprehensive collection of powerful tools designed to facilitate web development, network security, image editing, OSINT, AI, and torrent handling tasks.
 
 This project combines the power of PHP, HTML, and JavaScript to provide users with an all-in-one toolset. With a range of tools for encoding/decoding, cryptography, web development, image editing, network tools, pentesting, OSINT, AI, and torrent handling, this collection is a must-have for developers, network administrators, security experts, investigators, and researchers.
 
 ## Screenshot
 <div align="center">
-  <img src="src/public/images/screenshots/1.png" width="40%" height="40%" />
-  <img src="src/public/images/screenshots/2.png" width="40%" height="40%" />
+  <img src="src/public/assets/images/screenshots/1.png" width="40%" height="40%" />
+  <img src="src/public/assets/images/screenshots/2.png" width="40%" height="40%" />
 </div>
 
 ## Table of Contents
@@ -27,11 +27,12 @@ This project combines the power of PHP, HTML, and JavaScript to provide users wi
   - [AI Tools](#user-content-ai-tools)
   - [Miscellaneous Tools](#user-content-miscellaneous-tools)
 - [Requirements](#user-content-requirements)
-- [Documentation](#user-content-documentation)
 - [Changelog](#user-content-changelog)
+- [PSD files](#user-content-psd-files)
+- [Reporting Bugs & Feature Requests](#user-content-reporting-bugs--feature-requests)
 
 <div align="center">
-  <img src="src/public/images/Inline_Preview.png" width="auto" height="auto" />
+  <img src="src/public/assets/images/Inline_Preview.png" width="auto" height="auto" />
 </div>
 
 ## Tools list
@@ -40,7 +41,7 @@ List of all available tools in MIRANA-DZ Localhost Tools.
 Tools count: +60
 
 ### Encoding/Decoding Tools
-- Base64 Encoder / Decoder
+- Base64-32 Encoder / Decoder
 - URL Encoder / Decoder
 - UU Encoder / Decoder
 - ROT13 Encoder / Decoder
@@ -51,12 +52,14 @@ Tools count: +60
 
 ### Cryptography Tools
 - Message Digest
+- Hash Generator
 - HMAC Generator
-- CRC32 Generator
+- CRC32 - CRC32B - CRC32C Generator
 - Password Generator
 - Cisco Type 7 Password
 - Joomla Password Generator
 - Vb Password Generator
+- Drupal Password Generator
 - Htpasswd Generator
 - Caesar Cipher
 - Reverse Hash Lookup
@@ -66,12 +69,13 @@ Tools count: +60
 - HTML Obfuscator
 - HTML Escape / Unescape
 - EMAIL Obfuscator
+- JS Minifier
 - CSS Minifier
 - CSS Text Shadow
 - PHP Obfuscator 1
 
 ### Images Tools
-- Image to Base64
+- Image to Base64 / Base64 to Image
 - Images Converter
 - Image Resizer
 - Image Color Picker
@@ -81,6 +85,7 @@ Tools count: +60
 - IP Address Converter
 - HTTP Header Status Checker
 - Ping Tool
+- Ports List
 - IP Geolocation
 - Whois Lookup
 - Subdomain Finder
@@ -91,6 +96,7 @@ Tools count: +60
 - Website Malware Checker
 - Google Dorking
 - Default Router Settings
+- Default Credentials
 
 ### OSINT Tools
 - Search Engines
@@ -114,10 +120,14 @@ Tools count: +60
 ## Requirements
 Apache2 webserver 
 
-PHP version 8 or higher with following extensions enabled :
+PHP version 8 or higher with following extensions enabled and dependencies :
 - cURL Extension
 - Fileinfo PHP Extension
 - ZIP PHP Extension
+- Dom PHP Extension
+- GD PHP Extension
+- mbString PHP Extension
+- tuupola/base32
 
 ## Changelog
 See [changelog](./CHANGELOG.md).

@@ -6,5 +6,6 @@ $vendorDir = dirname(__DIR__);
 $baseDir = dirname($vendorDir);
 
 return array(
+    'Tuupola\\' => array($vendorDir . '/tuupola/base32/src'),
     'App\\' => array($baseDir . '/app'),
 );

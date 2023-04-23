@@ -144,7 +144,7 @@ echo $pageDescription; ?>
 
     <div class="search">
         <form name="inputFormFlex" class="search-box">
-            <img class="search-icon" alt="" src="images//search-engines-icons/google.webp">
+            <img class="search-icon" alt="" src="assets/images/search-engines-icons/google.webp">
             <input id="inputSearch" class="sbar" name="input_string" title="Search" type="text" accesskey="s">
             <button type="button" class="button">Search</button>
         </form>
@@ -152,17 +152,17 @@ echo $pageDescription; ?>
         <div class="search-engine">
             <div class="search-engine-head"><strong class="search-engine-tit">Search Engines</strong></div>
             <ul class="search-engine-list">
-                <li><img alt="" src="images/search-engines-icons/google.webp">Google</li>
-                <li><img alt="" src="images/search-engines-icons/bing.webp">Bing</li>
-                <li><img alt="" src="images/search-engines-icons/yandex.webp">Yandex</li>
-                <li><img alt="" src="images/search-engines-icons/www.youtube.png">Youtube</li>
-                <li><img alt="" src="images/search-engines-icons/twitter.webp">Twitter</li>
-                <li><img alt="" src="images/search-engines-icons/vimeo.webp">Vimeo</li>
-                <li><img alt="" src="images/search-engines-icons/itemfix.webp">Itemfix</li>
-                <li><img alt="" src="images/search-engines-icons/dailymotion.webp">Dailymotion</li>
-                <li><img alt="" src="images/search-engines-icons/metatube.webp">Metatube</li>
-                <li><img alt="" src="images/search-engines-icons/www.peteyvid.png">PeteyVid</li>
-                <li><img alt="" src="images/search-engines-icons/bitchute.webp">bitchute</li>
+                <li><img alt="" src="assets/images/search-engines-icons/google.webp">Google</li>
+                <li><img alt="" src="assets/images/search-engines-icons/bing.webp">Bing</li>
+                <li><img alt="" src="assets/images/search-engines-icons/yandex.webp">Yandex</li>
+                <li><img alt="" src="assets/images/search-engines-icons/www.youtube.png">Youtube</li>
+                <li><img alt="" src="assets/images/search-engines-icons/twitter.webp">Twitter</li>
+                <li><img alt="" src="assets/images/search-engines-icons/vimeo.webp">Vimeo</li>
+                <li><img alt="" src="assets/images/search-engines-icons/itemfix.webp">Itemfix</li>
+                <li><img alt="" src="assets/images/search-engines-icons/dailymotion.webp">Dailymotion</li>
+                <li><img alt="" src="assets/images/search-engines-icons/metatube.webp">Metatube</li>
+                <li><img alt="" src="assets/images/search-engines-icons/www.peteyvid.png">PeteyVid</li>
+                <li><img alt="" src="assets/images/search-engines-icons/bitchute.webp">bitchute</li>
             </ul>
         </div>
     </div>

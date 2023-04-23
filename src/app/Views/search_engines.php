@@ -164,7 +164,7 @@ echo $pageDescription; ?>
 
     <div class="search">
         <form name="inputFormFlex" class="search-box">
-            <img class="search-icon" alt="" src="images//search-engines-icons/google.webp">
+            <img class="search-icon" alt="" src="assets/images/search-engines-icons/google.webp">
             <input id="inputSearch" class="sbar" name="input_string" title="Search" type="text" accesskey="s">
             <button type="button" class="button">Search</button>
         </form>
@@ -172,23 +172,23 @@ echo $pageDescription; ?>
         <div class="search-engine">
             <div class="search-engine-head"><strong class="search-engine-tit">Search Engines</strong></div>
             <ul class="search-engine-list">
-                <li><img alt="" src="images/search-engines-icons/google.webp">Google</li>
-                <li><img alt="" src="images/search-engines-icons/bing.webp">Bing</li>
-                <li><img alt="" src="images/search-engines-icons/duckduckgo.webp">Duckduckg</li>
-                <li><img alt="" src="images/search-engines-icons/search.yahoo.webp">Yahoo</li>
-                <li><img alt="" src="images/search-engines-icons/yandex.webp">Yandex</li>
-                <li><img alt="" src="images/search-engines-icons/baidu.webp">Baidu</li>
-                <li><img alt="" src="images/search-engines-icons/dogpile.webp">Dogpile</li>
-                <li><img alt="" src="images/search-engines-icons/millionshort.webp">Millionshort</li>
-                <li><img alt="" src="images/search-engines-icons/ca.zapmeta.png">Zapmeta</li>
-                <li><img alt="" src="images/search-engines-icons/gigablast.webp">Gigablast</li>
-                <li><img alt="" src="images/search-engines-icons/etools.webp">Etools</li>
-                <li><img alt="" src="images/search-engines-icons/goo.webp">Goo</li>
-                <li><img alt="" src="images/search-engines-icons/search.daum.webp">Daum</li>
-                <li><img alt="" src="images/search-engines-icons/wolframalpha.webp">WolframA</li>
-                <li><img alt="" src="images/search-engines-icons/exalead.webp">Exalead</li>
-                <li><img alt="" src="images/search-engines-icons/search.carrot2.webp">Carrot2</li>
-                <li><img alt="" src="images/search-engines-icons/swisscows.webp">Swisscows</li>
+                <li><img alt="" src="assets/images/search-engines-icons/google.webp">Google</li>
+                <li><img alt="" src="assets/images/search-engines-icons/bing.webp">Bing</li>
+                <li><img alt="" src="assets/images/search-engines-icons/duckduckgo.webp">Duckduckg</li>
+                <li><img alt="" src="assets/images/search-engines-icons/search.yahoo.webp">Yahoo</li>
+                <li><img alt="" src="assets/images/search-engines-icons/yandex.webp">Yandex</li>
+                <li><img alt="" src="assets/images/search-engines-icons/baidu.webp">Baidu</li>
+                <li><img alt="" src="assets/images/search-engines-icons/dogpile.webp">Dogpile</li>
+                <li><img alt="" src="assets/images/search-engines-icons/millionshort.webp">Millionshort</li>
+                <li><img alt="" src="assets/images/search-engines-icons/ca.zapmeta.png">Zapmeta</li>
+                <li><img alt="" src="assets/images/search-engines-icons/gigablast.webp">Gigablast</li>
+                <li><img alt="" src="assets/images/search-engines-icons/etools.webp">Etools</li>
+                <li><img alt="" src="assets/images/search-engines-icons/goo.webp">Goo</li>
+                <li><img alt="" src="assets/images/search-engines-icons/search.daum.webp">Daum</li>
+                <li><img alt="" src="assets/images/search-engines-icons/wolframalpha.webp">WolframA</li>
+                <li><img alt="" src="assets/images/search-engines-icons/exalead.webp">Exalead</li>
+                <li><img alt="" src="assets/images/search-engines-icons/search.carrot2.webp">Carrot2</li>
+                <li><img alt="" src="assets/images/search-engines-icons/swisscows.webp">Swisscows</li>
             </ul>
         </div>
     </div>

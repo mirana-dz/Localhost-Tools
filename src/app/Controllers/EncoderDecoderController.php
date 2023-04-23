@@ -2,6 +2,8 @@
 
 namespace App\Controllers;
 
+use Tuupola\Base32;
+
 class EncoderDecoderController
 {
     public function Base64()
@@ -13,13 +15,31 @@ class EncoderDecoderController
 
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $input = trim($_POST['input']);
+            $algorithm = trim($_POST['algorithm']);
             ob_start();
-            if ($_POST['action'] === 'encode') {
-                echo base64_encode($input);
-            } elseif ($_POST['action'] === 'decode') {
-                echo base64_decode($input);
-            }
+            switch ($algorithm) {
+                case 'base64':
+                    if ($_POST['action'] === 'encode') {
+                        echo base64_encode($input);
+                    } elseif ($_POST['action'] === 'decode') {
+                        echo base64_decode($input);
+                    }
+                    break;
+                case 'base32':		
+                    $base32 = new Base32;
+                    if ($_POST['action'] === 'encode') {
+                        echo $base32->encode($input);
+                    } elseif ($_POST['action'] === 'decode') {
+					
+					if (is_base32($input)) {
+                        echo $base32->decode($input);
+									} else {
+				       echo 'This one is NOT base32';
+				       }	
 
+                    }
+                    break;
+            }
             $result = ob_get_clean();
             echo $result;
             exit;
@@ -27,7 +47,7 @@ class EncoderDecoderController
 
         require_once('../app/views/encoder_decoder.php');
     }
-
+	
     public function url()
     {
 

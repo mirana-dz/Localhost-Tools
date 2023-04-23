@@ -19,7 +19,9 @@ $form->select('count', 'Total Ping count:', array(
 ), '4t');
 $form->button('action', 'ping', 'Ping', array('class' => 'button'));
 $form->copyDownloadButton();
+$form->html('<div class="result-container">');
 $form->textarea('result-display', 'Ping result:');
+$form->html('</div>');
 echo $form->render();
 
 include '../app/includes/footer.php'; ?>

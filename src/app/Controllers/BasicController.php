@@ -8,7 +8,7 @@ class BasicController
     public function home()
     {
         $pageTitle = 'Home';
-        // $pageCategory = '';
+        $pageCategory = 'Home';
         $pageDescription = '<p class="first">Welcome to <span style="color:#a6780c; font-weight:bold">' . SITE_NAME . '</span>, a set of tools for helping development.</p>';
 
         // Load the view for the Home page
@@ -20,7 +20,7 @@ class BasicController
 
         $pageTitle = 'Cached Pages';
         $pageCategory = 'OSINT Tools';
-        $pageDescription = '<p>....</p>';
+        $pageDescription = '<p>This simple web tool lets you retrieve the cached page of any URL. A cached page is an old version of a web page that was saved at a specific time by a search engine or web crawler.</p>';
 
         require_once('../app/views/cached_pages.php');
     }
@@ -35,7 +35,7 @@ class BasicController
         require_once('../app/views/css_text_shadow.php');
     }
 
-public function googleDorking()
+    public function googleDorking()
     {
 
         $pageTitle = 'Google Dorking';
@@ -89,6 +89,7 @@ public function googleDorking()
     {
 
         $pageTitle = 'My Bookmarks';
+        $pageCategory = 'Miscellaneous Tools';
         $pageDescription = '<p>My <b>Bookmarks</b>, A list with shortcuts to my favorite web pages for easy access to them.</p>';
 
         require_once('../app/views/my_bookmarks.php');
@@ -131,7 +132,7 @@ public function googleDorking()
         $pageCategory = 'OSINT Tools';
         $pageDescription = '<p>A telephone number is often valuable information in OSINT investigations. There are many ways to investigate a national or international phone number. With the following custom search tool you can check if the phone number is found in different formats via search engines or via Reverse Number Lookup tools.</p>';
 
-        require_once('../app/views/search_phone_number.php');
+require_once('../app/views/search_phone_number.php');
     }
 
     public function videoSearch()

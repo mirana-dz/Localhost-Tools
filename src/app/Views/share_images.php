@@ -14,11 +14,12 @@ $form->button('action', 'share', 'Share Image', array('class' => 'button'));
 echo $form->render();
 ?>
     <div id="validate-error"></div>
-
+<div class="result-container">
     <div id="result-display"></div>
+	</div>
 
-    <script src="js/custom-file-input.js"></script>
-    <link href="css/custom-file-input.css" rel="stylesheet" type="text/css">
+    <script src="assets/js/custom-file-input.js"></script>
+    <link href="assets/css/custom-file-input.css" rel="stylesheet" type="text/css">
 
 <?php
 include '../app/includes/footer.php'; ?>

@@ -3,5 +3,12 @@
         "psr-4": {
             "App\\": "app/"
         }
-    }
+    },
+  "require": {
+    "ext-curl": "*",
+    "ext-dom": "*",
+    "ext-gd": "*",
+    "ext-mbstring": "*",
+        "tuupola/base32": "^2.0"
+  }
 }

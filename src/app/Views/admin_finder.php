@@ -6,6 +6,7 @@ echo $pageDescription;
 $form = new Form('POST', 'my-form', 'admin-finder');
 $form->input('url', 'Please Enter Target Site:', 'text');
 $form->button('action', 'submit', 'Submit', array('class' => 'button', 'onclick' => 'doSearch()'));
+
 echo $form->render();
 ?>
 

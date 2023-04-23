@@ -7,6 +7,10 @@ namespace Composer\Autoload;
 class ComposerStaticInit0610c39e9e6c4c9ff3522d2e5030cc38
 {
     public static $prefixLengthsPsr4 = array (
+        'T' => 
+        array (
+            'Tuupola\\' => 8,
+        ),
         'A' => 
         array (
             'App\\' => 4,
@@ -14,6 +18,10 @@ class ComposerStaticInit0610c39e9e6c4c9ff3522d2e5030cc38
     );
 
     public static $prefixDirsPsr4 = array (
+        'Tuupola\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/tuupola/base32/src',
+        ),
         'App\\' => 
         array (
             0 => __DIR__ . '/../..' . '/app',

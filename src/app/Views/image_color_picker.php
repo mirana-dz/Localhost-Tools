@@ -148,7 +148,7 @@ echo $pageDescription;
 
 
         $(document).ready(function () {
-            imageObj.src = 'images/color-picker.png';
+            imageObj.src = 'assets/images/color-picker.png';
 
             imageObj.onload = function () {
                 fitImageOn(canvas, imageObj)
@@ -192,8 +192,8 @@ echo $pageDescription;
         });
     </script>
 
-    <script src="js/custom-file-input.js"></script>
-    <link href="css/custom-file-input.css" rel="stylesheet" type="text/css">
+    <script src="assets/js/custom-file-input.js"></script>
+    <link href="assets/css/custom-file-input.css" rel="stylesheet" type="text/css">
 
 <?php
 include '../app/includes/footer.php'; ?>

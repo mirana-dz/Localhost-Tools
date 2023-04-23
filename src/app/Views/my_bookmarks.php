@@ -144,7 +144,7 @@ function parseNode($node): string
         $html .= '
 		  
 <div class="col1"><a href="' . $bookmark->url . '" title="' . $bookmark->text . '" class="menu-item1" target="_blank">
-<img class="toolimg1" src="images/bookmarks-icons/' . $bookmark->img_src . '" alt="Base64 Encoder/Decoder">
+<img class="toolimg1" src="assets/images/bookmarks-icons/' . $bookmark->img_src . '" alt="Base64 Encoder/Decoder">
 <h3 class="thumbnail_caption1">' . $bookmark->title . '</h3></a></div>
 ';
     }
