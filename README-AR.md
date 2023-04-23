@@ -1,7 +1,8 @@
 <div align="center">
 <img src="src/public/assets/images/basmala.png" alt="basmala" width="294px" height="36px" />
 </div>
-[English](./README.md) | العربية
+
+ [English](./README.md) | العربية
 <div align="center">
   <img src="src/public/assets/images/mirana-dz_localhost_tools.png" alt="MIRANA-DZ Localhost Tools logo" width="200px" height="70px" />
   <h1>🧰🛠️ Localhost Tools مرحبا بكم في</h1>
