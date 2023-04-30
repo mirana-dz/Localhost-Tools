@@ -7,7 +7,7 @@ use Exception;
 /**
  * Class ThePirateBayApi
  * Provides access to ThePirateBay's API to search for torrents and retrieve related information.
- * 
+ *
  * @package App\Libraries\Torrent
  */
 class ThePirateBayApi
@@ -24,7 +24,7 @@ class ThePirateBayApi
 
     /**
      * @var array The categories of torrents supported by ThePirateBay's API.
-     * 
+     *
      * Note: Games, Music, ... removed, as a muslim I don't support these categories.
      */
     private const CATEGORIES = array(

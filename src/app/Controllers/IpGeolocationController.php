@@ -7,27 +7,34 @@ use Exception;
 class IpGeolocationController
 {
 
-    public function index()
+    public function index(): void
     {
 
         $pageTitle = 'IP Geolocation';
         $pageCategory = 'Network Tools';
         $pageDescription = '<p>IP Geolocation solution to look up for the geolocation of a given IP address. Supports both IPv4 and IPv6. Enter a valid IPv4 or IPv6 and then click the lookup button. If the IP address is valid, the result will be displayed accordingly. The geographical info of the IP address consists of country, region, city, latitude, longitude, timezone, and more ...</p>';
 
-        $input = '';
+        if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
+            require_once('../app/views/ip_geolocation.php');
+            return;
+        }
 
-        if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-            $input = trim($_POST['input']);
-            ob_start();
+        $input = trim($_POST['input'] ?? '');
 
-            try {
-                $data = $this->ipApiJson($input);
-            } catch (Exception $e) {
-                echo $e->getMessage();
-            }
 
-            if (!empty($data)) {
-                echo '<b>Status</b> : ' . $data['status'] . '<br> 		
+        if (empty($input)) {
+            echo 'Invalid input.';
+            return;
+        }
+
+        try {
+            $data = $this->ipApiJson($input);
+        } catch (Exception $e) {
+            echo $e->getMessage();
+        }
+
+        if (!empty($data)) {
+            echo '<b>Status</b> : ' . $data['status'] . '<br> 		
 		        <b>IP</b> : ' . $data['query'] . '<br> 
 		        <b>Country</b> : ' . $data['country'] . '<br> 		
 		        <b>Region</b> : ' . $data['region'] . '<br> 		
@@ -38,20 +45,13 @@ class IpGeolocationController
 		        <b>Timezone</b> : ' . $data['timezone'] . '<br> 
 		        <b>Internet Service Provider</b> : ' . $data['isp'] . '<br> 
 		        <b>Autonomous System</b> : ' . $data['as'] . '<br>';
-            }
-
-            $result = ob_get_clean();
-            echo $result;
-            exit;
         }
-
-        require_once('../app/views/ip_geolocation.php');
     }
 
     private function ipApiJson($ipAddress): array
     {
-         if (!filter_var($ipAddress, FILTER_VALIDATE_IP))
-           throw new Exception("$ipAddress is not a valid IP address");
+        if (!filter_var($ipAddress, FILTER_VALIDATE_IP))
+            throw new Exception("$ipAddress is not a valid IP address");
 
         $getApiJson = @file_get_contents("http://ip-api.com/json/" . $ipAddress);
 

@@ -22,7 +22,7 @@ class ReverseHashLookup
         $reverseGromWeb = $this->reverseGromWeb($hash, 'md5');
         $md5Decrypt = $this->md5Decrypt($hash, 'md5');
         $hashToolKit = $this->hashToolKit($hash);
-		$nitrxgenMd5Db = $this->nitrxgenMd5Db($hash);
+        $nitrxgenMd5Db = $this->nitrxgenMd5Db($hash);
         return array($reverseGromWeb, $md5Decrypt, $hashToolKit, $nitrxgenMd5Db);
     }
 

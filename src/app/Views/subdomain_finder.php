@@ -5,7 +5,7 @@ echo $pageDescription;
 
 $form = new Form('POST', 'my-form', 'form-flex');
 $form->html('<div class="flex-wrap">');
-$form->input('input', '', 'text', array('class' => 'flex', 'placeholder' => 'eg: exemple.com'));
+$form->input('input', '', 'text', array('class' => 'flex input-url', 'placeholder' => 'eg: exemple.com'));
 $form->button('action', 'scan', 'Run Scan', array('class' => 'button'));
 $form->html('</div>');
 echo $form->render();

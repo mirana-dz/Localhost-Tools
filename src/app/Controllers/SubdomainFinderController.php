@@ -5,37 +5,36 @@ namespace App\Controllers;
 class SubdomainFinderController
 {
 
-    public function index()
+    public function index(): void
     {
 
         $pageTitle = 'Subdomain Finder';
         $pageCategory = 'Network Tools';
         $pageDescription = '<p>Discovered subdomains and their IP addresses.</p>';
 
-        $input = '';
+        if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
+            require_once('../app/views/subdomain_finder.php');
+            return;
+        }
 
-        if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-            $input = trim($_POST['input']);
-            ob_start();
+        $input = trim($_POST['input'] ?? '');
 
-            $results = $this->subDomainFinder($input);
-            echo '<p>Search result for <b>' . $input . '</b>.</p>';
-            echo '<table class="tb"><tbody>
+        if (empty($input)) {
+            echo 'Invalid input.';
+            return;
+        }
+
+        $results = $this->subDomainFinder($input);
+        echo '<p>Search result for <b>' . $input . '</b>.</p>';
+        echo '<table class="tb"><tbody>
              <tr>
                <th>Domain</th>
                <th>IP</th>
              </tr>';
-            foreach ($results as $domain => $ip) {
-                echo '<tr><td>' . $domain . '</td><td>' . $ip . '</td></tr>';
-            }
-            echo '</tbody></table>';
-
-            $result = ob_get_clean();
-            echo $result;
-            exit;
+        foreach ($results as $domain => $ip) {
+            echo '<tr><td>' . $domain . '</td><td>' . $ip . '</td></tr>';
         }
-
-        require_once('../app/views/subdomain_finder.php');
+        echo '</tbody></table>';
     }
 
     private function subDomainFinder($site)

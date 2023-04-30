@@ -11,7 +11,7 @@
     <link href="assets/css/style.css" rel="stylesheet" type="text/css">
     <link href="assets/css/font-awesome.css" rel="stylesheet" type="text/css">
     <!-- Javascript -->
-    <script src="assets/modules/jquery-3.6.0.min.js"></script>
+    <script src="assets/modules/jquery-3.6.4.min.js"></script>
 </head>
 
 <body>

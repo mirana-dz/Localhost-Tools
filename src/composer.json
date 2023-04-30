@@ -9,6 +9,9 @@
     "ext-dom": "*",
     "ext-gd": "*",
     "ext-mbstring": "*",
-        "tuupola/base32": "^2.0"
+        "tuupola/base32": "^2.0",
+        "tuupola/base58": "^2.1",
+    "ext-intl": "*",
+        "guzzlehttp/guzzle": "^7.5"
   }
 }

@@ -65,7 +65,7 @@ class AboutController
   vertical-align: middle;
 }
 </style>
-<p align="center">
+<p class="center">
 <a href="https://en.wikipedia.org/wiki/Ummah" target="_blank"><img src="assets/images/support/Muslim_ummah.png" alt="Muslim ummah" title="Muslim ummah" id="img1"></a>
 <a href="https://www.google.com/search?q=free+palestine" target="_blank"><img src="assets/images/support/free_palestine.png" alt="Free Palestine" title="Free Palestine" id="img1"></a>
 <a href="https://t.me/areennabluss" target="_blank"><img src="assets/images/support/Lions_Den.png" alt="Lions Den" title="Lions Den" id="img1"></a>
@@ -77,7 +77,6 @@ class AboutController
 <a href="https://www.google.com/search?q=save+kashmir" target="_blank"><img src="assets/images/support/save_kashmir.png" alt="save_kashmir" title="Save Kashmir" id="img1"></a>
 </p>';
 
-        // Load the view for the About page
         require_once('../app/views/about.php');
     }
 }

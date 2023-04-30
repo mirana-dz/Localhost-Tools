@@ -5,7 +5,7 @@ namespace App\Controllers;
 class BasicController
 {
 
-    public function home()
+    public function home(): void
     {
         $pageTitle = 'Home';
         $pageCategory = 'Home';
@@ -15,7 +15,7 @@ class BasicController
         require_once('../app/views/home.php');
     }
 
-    public function cachedPages()
+    public function cachedPages(): void
     {
 
         $pageTitle = 'Cached Pages';
@@ -25,7 +25,7 @@ class BasicController
         require_once('../app/views/cached_pages.php');
     }
 
-    public function cssTextShadow()
+    public function cssTextShadow(): void
     {
 
         $pageTitle = 'CSS Text Shadow Generator';
@@ -35,7 +35,7 @@ class BasicController
         require_once('../app/views/css_text_shadow.php');
     }
 
-    public function googleDorking()
+    public function googleDorking(): void
     {
 
         $pageTitle = 'Google Dorking';
@@ -45,7 +45,7 @@ class BasicController
         require_once('../app/views/google_dorking.php');
     }
 
-    public function imageColorPicker()
+    public function imageColorPicker(): void
     {
 
         $pageTitle = 'Image Color Picker';
@@ -55,7 +55,7 @@ class BasicController
         require_once('../app/views/image_color_picker.php');
     }
 
-    public function imageResizer()
+    public function imageResizer(): void
     {
 
         $pageTitle = 'Image Resizer';
@@ -65,7 +65,7 @@ class BasicController
         require_once('../app/views/image_resizer.php');
     }
 
-    public function imagesSearch()
+    public function imagesSearch(): void
     {
 
         $pageTitle = 'Images Search';
@@ -75,7 +75,7 @@ class BasicController
         require_once('../app/views/images_search.php');
     }
 
-    public function listsAndTables()
+    public function listsAndTables(): void
     {
 
         $pageTitle = 'Lists and Tables';
@@ -85,7 +85,7 @@ class BasicController
         require_once('../app/views/lists_and_tables.php');
     }
 
-    public function myBookmarks()
+    public function myBookmarks(): void
     {
 
         $pageTitle = 'My Bookmarks';
@@ -95,7 +95,7 @@ class BasicController
         require_once('../app/views/my_bookmarks.php');
     }
 
-    public function passwordGenerator()
+    public function passwordGenerator(): void
     {
 
         $pageTitle = 'Password Generator';
@@ -105,7 +105,7 @@ class BasicController
         require_once('../app/views/password_generator.php');
     }
 
-    public function reverseImageSearch()
+    public function reverseImageSearch(): void
     {
 
         $pageTitle = 'Reverse Image Search';
@@ -115,7 +115,7 @@ class BasicController
         require_once('../app/views/reverse_image_search.php');
     }
 
-    public function searchEngines()
+    public function searchEngines(): void
     {
 
         $pageTitle = 'Search Engines';
@@ -125,17 +125,17 @@ class BasicController
         require_once('../app/views/search_engines.php');
     }
 
-    public function searchPhoneNumber()
+    public function searchPhoneNumber(): void
     {
 
         $pageTitle = 'Search phone number';
         $pageCategory = 'OSINT Tools';
         $pageDescription = '<p>A telephone number is often valuable information in OSINT investigations. There are many ways to investigate a national or international phone number. With the following custom search tool you can check if the phone number is found in different formats via search engines or via Reverse Number Lookup tools.</p>';
 
-require_once('../app/views/search_phone_number.php');
+        require_once('../app/views/search_phone_number.php');
     }
 
-    public function videoSearch()
+    public function videoSearch(): void
     {
 
         $pageTitle = 'Video Search';
@@ -145,7 +145,7 @@ require_once('../app/views/search_phone_number.php');
         require_once('../app/views/video_search.php');
     }
 
-    public function websiteMalwareChecker()
+    public function websiteMalwareChecker(): void
     {
 
         $pageTitle = 'Website Malware Checker';

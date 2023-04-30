@@ -6,26 +6,23 @@ use App\Core\Uploader;
 
 class ShareImagesController
 {
-    public function index()
+    public function index(): void
     {
 
         $pageTitle = 'Share Images';
         $pageCategory = 'Images Tools';
         $pageDescription = '<p>Upload and share your images.</p>';
 
-        if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-            ob_start();
-
-            list($imageData, $imageExtension) = $this->uploadFileAction();
-
-            $return_value = $this->uploadImageAndRetrieveUrl($imageData);
-
-            echo $return_value;
-            $result = ob_get_clean();
-            echo $result;
-            exit;
+        if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
+            require_once('../app/views/share_images.php');
+            return;
         }
-        require_once('../app/views/share_images.php');
+
+        list($imageData, $imageExtension) = $this->uploadFileAction();
+
+        $return_value = $this->uploadImageAndRetrieveUrl($imageData);
+
+        echo '<div class="center"><a href="' . $return_value . '" target="_blank">' . $return_value . '</a></div>';
     }
 
     private function uploadFileAction()

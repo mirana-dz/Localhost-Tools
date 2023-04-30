@@ -27,7 +27,7 @@ class GridMenu
         array('label' => 'Binary Encoder/Decoder', 'url' => '?route=bin_encoder_decoder', 'category' => 1, 'img_src' => 'assets/images/icons/binary.png'),
         array('label' => 'Torrent Decoder', 'url' => '?route=torrent_decoder', 'category' => 1, 'img_src' => 'assets/images/icons/torrent.png'),
         // 2- Cryptography Tools
-        array('label' => 'Message Digest & SHA', 'url' => '?route=message_digest', 'category' => 2, 'img_src' => 'assets/images/icons/message_digest.png'),
+        array('label' => 'Message Digest', 'url' => '?route=message_digest', 'category' => 2, 'img_src' => 'assets/images/icons/message_digest.png'),
         array('label' => 'Hash Generator', 'url' => '?route=hash_generator', 'category' => 2, 'img_src' => 'assets/images/icons/hash_generator.png'),
         array('label' => 'HMAC Generator', 'url' => '?route=hmac_generator', 'category' => 2, 'img_src' => 'assets/images/icons/hmac.png'),
         array('label' => 'CRC32 Generator', 'url' => '?route=crc32_generator', 'category' => 2, 'img_src' => 'assets/images/icons/crc32.png'),
@@ -39,6 +39,7 @@ class GridMenu
         array('label' => 'Htpasswd Generator', 'url' => '?route=htPasswd_generator', 'category' => 2, 'img_src' => 'assets/images/icons/htpasswd_generator.png'),
         array('label' => 'Caesar Cipher', 'url' => '?route=caesar_cipher', 'category' => 2, 'img_src' => 'assets/images/icons/caesar_cipher.png'),
         array('label' => 'Reverse Hash Lookup', 'url' => '?route=reverse_hash_lookup', 'category' => 2, 'img_src' => 'assets/images/icons/reverse_hash_lookup.png'),
+        array('label' => 'Password Decoder', 'url' => '?route=password_decoder', 'category' => 2, 'img_src' => 'assets/images/icons/password_decoder.png'),
         // 3- Web Development Tools
         array('label' => 'HTML Minifier', 'url' => '?route=html_minifier', 'category' => 3, 'img_src' => 'assets/images/icons/html_minifier.png'),
         array('label' => 'HTML Obfuscator', 'url' => '?route=html_obfuscator', 'category' => 3, 'img_src' => 'assets/images/icons/html_obfuscator_1.png'),

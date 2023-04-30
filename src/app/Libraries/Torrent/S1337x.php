@@ -9,9 +9,9 @@ class S1337x
 {
     private const BASE_URL = "https://1337x.to";
     public array $results;
-	public $totalPages;
+    public $totalPages;
     protected ?array $torrentInfo = null;
-	
+
 
     function __construct($q, $page = 1)
     {
@@ -19,7 +19,7 @@ class S1337x
         $this->results = $this->get_1337x($q, $page);
     }
 
-    private function get_1337x($q, $page=1): ?array
+    private function get_1337x($q, $page = 1): ?array
     {
 
         $baseUrl = self::BASE_URL . "/search/" . $q . "/" . $page . "/";
@@ -27,22 +27,22 @@ class S1337x
         $getHtml = httpsGetRequest($baseUrl);
 
         $xpath = $this->get_xpath($getHtml);
-	    
-try {
-        $pageCounts = $xpath->query('//div[@class="pagination"]/ul/li');
-		
-		$lastLink = $xpath->evaluate('string(//li[@class="last"]/a/@href)');
-		//<li class="last"><a href="/search/{search}/50/">Last</a></li>
-		preg_match('/\/(\d+)\/$/', $lastLink, $matches);
-        $this->totalPages = $matches[1];
-		
-     //TODO
-     //https://1337x.to/search/delphi/36/ laste one is numeric
-	 //if (is_numeric($pageCounts[count($pageCounts-1)]->nodeValue)) {
-     //$totalPages = $pageCounts[count($pageCounts-1)]->nodeValue;
-    } catch (Exception $e) {
-        $this->totalPages = 1;
-    }
+
+        try {
+            $pageCounts = $xpath->query('//div[@class="pagination"]/ul/li');
+
+            $lastLink = $xpath->evaluate('string(//li[@class="last"]/a/@href)');
+            //<li class="last"><a href="/search/{search}/50/">Last</a></li>
+            preg_match('/\/(\d+)\/$/', $lastLink, $matches);
+            $this->totalPages = $matches[1];
+
+            //TODO
+            //https://1337x.to/search/delphi/36/ laste one is numeric
+            //if (is_numeric($pageCounts[count($pageCounts-1)]->nodeValue)) {
+            //$totalPages = $pageCounts[count($pageCounts-1)]->nodeValue;
+        } catch (Exception $e) {
+            $this->totalPages = 1;
+        }
 
         foreach ($xpath->query("//table/tbody/tr") as $result) {
 

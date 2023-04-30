@@ -1,0 +1,221 @@
+<h3>What is Base64 and its usage?</h3>
+<p>Base64 is a binary-to-text encoding scheme that converts binary data into a sequence of printable characters. It is
+    commonly used to encode binary data such as images, audio, or video files into a format that can be transmitted over
+    text-based channels, such as email or HTTP.
+</p>
+<p>In Base64 encoding, each 3-byte sequence of binary data is converted into a 4-byte sequence of printable characters.
+    The 4-byte sequence is made up of characters from a fixed alphabet of 64 characters, which includes letters, digits,
+    and symbols. The resulting encoded data is typically longer than the original binary data, but it can be easily
+    decoded back into its original form using a Base64 decoder.
+</p>
+<p>
+    Base64 is widely used in web development for encoding data such as images, JSON, and XML documents that need to be
+    transmitted over HTTP. It is also used in email systems to encode binary attachments, as well as in cryptographic
+    applications for encoding binary keys and digital signatures.
+</p>
+<p>
+    In summary, Base64 is a convenient way to represent binary data as text, making it easier to transmit and store
+    binary data in a text-based format.</p>
+</p>
+<h3>The Base64 encoding index table</h3>
+<p>The following is the Base64 encoding index table.</p>
+<table class="tb">
+    <tbody>
+    <tr>
+        <th scope="col">Index</th>
+        <th scope="col">Char
+        </th>
+        <td colspan="2" rowspan="17">
+        </td>
+        <th scope="col">Index</th>
+        <th scope="col">Char
+        </th>
+        <td colspan="2" rowspan="17">
+        </td>
+        <th scope="col">Index</th>
+        <th scope="col">Char
+        </th>
+        <td colspan="2" rowspan="17">
+        </td>
+        <th scope="col">Index</th>
+        <th scope="col">Char
+        </th>
+    </tr>
+    <tr>
+        <td>0</td>
+        <td><code>A</code></td>
+        <td>16</td>
+        <td><code>Q</code></td>
+        <td>32</td>
+        <td><code>g</code></td>
+        <td>48</td>
+        <td><code>w</code>
+        </td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td><code>B</code></td>
+        <td>17</td>
+        <td><code>R</code></td>
+        <td>33</td>
+        <td><code>h</code></td>
+        <td>49</td>
+        <td><code>x</code>
+        </td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td><code>C</code></td>
+        <td>18</td>
+        <td><code>S</code></td>
+        <td>34</td>
+        <td><code>i</code></td>
+        <td>50</td>
+        <td><code>y</code>
+        </td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td><code>D</code></td>
+        <td>19</td>
+        <td><code>T</code></td>
+        <td>35</td>
+        <td><code>j</code></td>
+        <td>51</td>
+        <td><code>z</code>
+        </td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td><code>E</code></td>
+        <td>20</td>
+        <td><code>U</code></td>
+        <td>36</td>
+        <td><code>k</code></td>
+        <td>52</td>
+        <td><code>0</code>
+        </td>
+    </tr>
+    <tr>
+        <td>5</td>
+        <td><code>F</code></td>
+        <td>21</td>
+        <td><code>V</code></td>
+        <td>37</td>
+        <td><code>l</code></td>
+        <td>53</td>
+        <td><code>1</code>
+        </td>
+    </tr>
+    <tr>
+        <td>6</td>
+        <td><code>G</code></td>
+        <td>22</td>
+        <td><code>W</code></td>
+        <td>38</td>
+        <td><code>m</code></td>
+        <td>54</td>
+        <td><code>2</code>
+        </td>
+    </tr>
+    <tr>
+        <td>7</td>
+        <td><code>H</code></td>
+        <td>23</td>
+        <td><code>X</code></td>
+        <td>39</td>
+        <td><code>n</code></td>
+        <td>55</td>
+        <td><code>3</code>
+        </td>
+    </tr>
+    <tr>
+        <td>8</td>
+        <td><code>I</code></td>
+        <td>24</td>
+        <td><code>Y</code></td>
+        <td>40</td>
+        <td><code>o</code></td>
+        <td>56</td>
+        <td><code>4</code>
+        </td>
+    </tr>
+    <tr>
+        <td>9</td>
+        <td><code>J</code></td>
+        <td>25</td>
+        <td><code>Z</code></td>
+        <td>41</td>
+        <td><code>p</code></td>
+        <td>57</td>
+        <td><code>5</code>
+        </td>
+    </tr>
+    <tr>
+        <td>10</td>
+        <td><code>K</code></td>
+        <td>26</td>
+        <td><code>a</code></td>
+        <td>42</td>
+        <td><code>q</code></td>
+        <td>58</td>
+        <td><code>6</code>
+        </td>
+    </tr>
+    <tr>
+        <td>11</td>
+        <td><code>L</code></td>
+        <td>27</td>
+        <td><code>b</code></td>
+        <td>43</td>
+        <td><code>r</code></td>
+        <td>59</td>
+        <td><code>7</code>
+        </td>
+    </tr>
+    <tr>
+        <td>12</td>
+        <td><code>M</code></td>
+        <td>28</td>
+        <td><code>c</code></td>
+        <td>44</td>
+        <td><code>s</code></td>
+        <td>60</td>
+        <td><code>8</code>
+        </td>
+    </tr>
+    <tr>
+        <td>13</td>
+        <td><code>N</code></td>
+        <td>29</td>
+        <td><code>d</code></td>
+        <td>45</td>
+        <td><code>t</code></td>
+        <td>61</td>
+        <td><code>9</code>
+        </td>
+    </tr>
+    <tr>
+        <td>14</td>
+        <td><code>O</code></td>
+        <td>30</td>
+        <td><code>e</code></td>
+        <td>46</td>
+        <td><code>u</code></td>
+        <td>62</td>
+        <td><code>+</code>
+        </td>
+    </tr>
+    <tr>
+        <td>15</td>
+        <td><code>P</code></td>
+        <td>31</td>
+        <td><code>f</code></td>
+        <td>47</td>
+        <td><code>v</code></td>
+        <td>63</td>
+        <td><code>/</code>
+        </td>
+    </tr>
+    </tbody>
+</table>

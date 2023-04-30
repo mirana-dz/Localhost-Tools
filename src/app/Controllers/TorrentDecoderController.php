@@ -7,29 +7,32 @@ use App\Libraries\Torrent\TorrentBencode;
 
 class TorrentDecoderController
 {
-    public function index()
+    public function index(): void
     {
 
-        $pageTitle = 'Torrent decoder';
+        $pageTitle = 'Torrent Decoder';
         $pageCategory = 'Encoding/Decoding Tools';
         $pageDescription = '<p>This tool will decode a BitTorrent file (.torrent) and display the information within in a human-readable manner.</p>';
 
-        if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-            ob_start();
+        if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
+            require_once('../app/views/torrent_decoder.php');
+            return;
+        }
 
-            list($fileData, $fileExtension) = $this->uploadFileAction();
 
-            $bcoder = new TorrentBencode;
+        list($fileData, $fileExtension) = $this->uploadFileAction();
 
-            $torrent_data = $bcoder->decodeData($fileData);
+        $bcoder = new TorrentBencode;
 
-            $private_checked = '';
+        $torrent_data = $bcoder->decodeData($fileData);
 
-            if ($bcoder->isPrivate()) $private_checked = 'checked';
+        $private_checked = '';
 
-            $file_num = 0;
+        if ($bcoder->isPrivate()) $private_checked = 'checked';
 
-            $html_files_table = '<table class="tb">
+        $file_num = 0;
+
+        $html_files_table = '<table class="tb">
           <tr>
             <th scope="col">&nbsp;</td>		  
             <th scope="col">File name</td>
@@ -37,16 +40,16 @@ class TorrentDecoderController
           </tr>
           <tr>';
 
-            foreach ($bcoder->filelist()['files'] as &$files) {
-                ++$file_num;
-                $html_files_table .= '<tr><td>' . $file_num . '</td>';
-                $html_files_table .= '<td style="text-align: left;">' . $files['name'] . '</td>';
-                $html_files_table .= '<td>' . readableFileSize($files['size']) . '</td></tr>';
-            }
+        foreach ($bcoder->filelist()['files'] as &$files) {
+            ++$file_num;
+            $html_files_table .= '<tr><td>' . $file_num . '</td>';
+            $html_files_table .= '<td style="text-align: left;">' . $files['name'] . '</td>';
+            $html_files_table .= '<td>' . readableFileSize($files['size']) . '</td></tr>';
+        }
 
-            $html_files_table .= '</table>';
+        $html_files_table .= '</table>';
 
-            echo '<div class="wrapper">
+        echo '<div class="wrapper">
             <div class="tabs">
                 <div class="tab">
                     <input type="radio" name="css-tabs" id="tab-1" checked class="tab-switch">
@@ -65,34 +68,34 @@ class TorrentDecoderController
 			
 			<!--- ============================== tab-1Div: General Information ============================== --->
                 <div id="tab-1Div" class="tab-content">
-                <label class="field-label block" for="name">Name</label>
+                <label class="form-label" for="name">Name:</label>
                 <input type="text" id="name" name="name" placeholder="" autocomplete="off"
                        value="' . $bcoder->getName() . '">
-                <label class="field-label block" for="url">Url</label>
+                <label class="form-label" for="url">Url:</label>
                 <input type="text" id="url" name="url" placeholder="" autocomplete="off" value="' . $bcoder->getPublisherUrl() . '">
-                <label class="field-label block" for="published_by">Published by</label>
+                <label class="form-label" for="published_by">Published by:</label>
                 <input type="text" id="published_by" name="published_by" placeholder=""
                        autocomplete="off" value="' . $bcoder->getPublisher() . '">
-                <label class="field-label block" for="created_by">Created by</label>
+                <label class="form-label" for="created_by">Created by:</label>
                 <input type="text" id="created_by" name="created_by" placeholder=""
                        autocomplete="off" value="' . $bcoder->getCreatedBy() . '">
-                <label class="field-label block" for="creation_date">Creation date</label>
+                <label class="form-label" for="creation_date">Creation date:</label>
                 <input type="text" id="creation_date" name="creation_date" placeholder=""
                        autocomplete="off" value="' . date("d-m-Y H:i:s", $bcoder->getCreationDate()) . '">
-				<label class="field-label block" for="private">Private torrent</label>	   
+				<label class="form-label" for="private">Private torrent:</label>	   
 				<input type="checkbox" id="private" name="private" ' . $private_checked . '><br>
-                <label class="field-label block" for="size">Total Size</label>
+                <label class="form-label" for="size">Total Size:</label>
                 <input type="text" id="size" name="size" placeholder="" autocomplete="off"
                        value="' . readableFileSize($bcoder->fileList()['total_size']) . '">
-                <label class="field-label block" for="hash">Hash</label>
+                <label class="form-label" for="hash">Hash:</label>
                 <input type="text" id="hash" name="hash" placeholder="" autocomplete="off"
                        value="' . $bcoder->getInfoHash() . '">
-                <label class="field-label block" for="magnet">Magnet link</label>
+                <label class="form-label" for="magnet">Magnet link:</label>
                 <input type="text" id="magnet" name="magnet" placeholder="" autocomplete="off"
                        value="' . $bcoder->getMagnet() . '">   
-                <label class="field-label block" for="comment">Comment</label>	   
+                <label class="form-label" for="comment">Comment:</label>	   
 				<textarea placeholder="your data here" name="comment" id="text" style="width:95%;" rows="7">' . $bcoder->getComment() . '</textarea>  
-                <label class="field-label block" for="trackers">Trackers</label>
+                <label class="form-label" for="trackers">Trackers:</label>
               	<textarea placeholder="your data here" name="trackers" id="text" style="width:95%;" rows="7">' . $bcoder->getAnnounce() . '</textarea> 					   
                 </div> <!--- end tab-1Div --->
 				
@@ -104,26 +107,19 @@ class TorrentDecoderController
 				
 			<!--- ============================== tab-3Div: Raw Data ============================== --->
                 <div id="tab-3Div" class="tab-content" style="display:none;">
-                <pre>' . $bcoder->getRawData() . '</pre>
+				<textarea name="getRawData" id="getRawData">' . $bcoder->getRawData() . '</textarea>
                 </div> <!--- end tab-3Div --->
             </div> <!--- end pane --->
         </div> <!--- end wrapper --->';
-           // for div panel
-            echo "<script> 
+        // for div panel
+        echo "<script> 
 	        function loadScript(url) {
             $.getScript(url);
         }
 	
 	loadScript('assets/js/app.js'); 
-	
-	
-	</script>";
-            $result = ob_get_clean();
-            echo $result;
-            exit;
-        }
 
-        require_once('../app/views/torrent_decoder.php');
+	</script>";
     }
 
     private function uploadFileAction()

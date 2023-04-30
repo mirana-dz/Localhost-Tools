@@ -6,7 +6,7 @@ echo $pageDescription;
     <style>
         .resizer {
             font-weight: bold;
-            */ padding: 20px;
+            padding: 20px;
         }
 
         .dimensions {
@@ -49,6 +49,9 @@ echo $pageDescription;
         </div>
 
         <canvas id="resizer_canvas" class="resizer_canvas" width="500" height="500" style="display:none"></canvas>
+        <div class="center">
+            <button id="download_btn" class="button" style="display:none">Download Image</button>
+        </div>
     </div>
 
     <script>
@@ -68,6 +71,7 @@ echo $pageDescription;
             reader.addEventListener("load", () => {
                 openImage(reader.result);
                 $(canvas).show();
+                $('#download_btn').show();
             });
 
             reader.readAsDataURL(file);
@@ -111,6 +115,16 @@ echo $pageDescription;
 
             canvasCtx.drawImage(activeImage, 0, 0, Math.floor(width), Math.floor(height));
         }
+
+        $("#download_btn").on("click", function () {
+            var dataURL = canvas.toDataURL("image/png");
+            var link = $("<a/>");
+            link.attr("href", dataURL);
+            link.attr("download", "image_resized.png");
+            $("body").append(link);
+            link[0].click();
+            link.remove();
+        });
     </script>
 
     <script src="assets/js/custom-file-input.js"></script>

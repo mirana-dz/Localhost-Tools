@@ -40,7 +40,7 @@ echo $pageDescription;
                 url: '?route=ports_list&action=load' + page + '&search=' + search,
                 type: 'get',
                 beforeSend: function () {
-                    $("#search-box-brand").css("background", "#313030 url(images/blue-loading.gif) no-repeat 100%");
+                    $("#search-box-brand").css("background", "#313030 url(assets/images/blue-loading.gif) no-repeat 100%");
                 },
                 success: function (response) {
                     $('#index-results').html(response);

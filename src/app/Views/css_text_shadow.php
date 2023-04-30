@@ -3,8 +3,8 @@ include '../app/includes/header.php';
 
 echo $pageDescription; ?>
 
-    <script src="assets/modules/spectrum-1.8.1/spectrum.js"></script>
-    <link rel="stylesheet" type="text/css" href="assets/modules/spectrum-1.8.1/spectrum.css">
+    <script src="assets/modules/spectrum-2.0.10/spectrum.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/modules/spectrum-2.0.10/spectrum.css">
 
     <style>
         #text-preview {

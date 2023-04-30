@@ -1,12 +1,12 @@
 <?php include '../app/includes/header.php'; ?>
 
-<div class="nav float-right">
-            <input id="radio-1" type="radio" name="radio" value="1" checked>
-            <label for="radio-1" class="radioLabel">Encoder</label>
-    
-            <input id="radio-2" type="radio" name="radio" value="2">
-            <label for="radio-2" class="radioLabel">Decoder</label>
-</div>
+    <div class="nav float-right">
+        <input id="radio-1" type="radio" name="radio" value="1" checked>
+        <label for="radio-1" class="radioLabel">Encoder</label>
+
+        <input id="radio-2" type="radio" name="radio" value="2">
+        <label for="radio-2" class="radioLabel">Decoder</label>
+    </div>
 
     <div id="image-to-base64">
         <?php
@@ -30,7 +30,7 @@
         $form->copyDownloadButton();
         $form->html('<div class="result-container">');
         $form->textarea('result-display', 'Output:');
-		$form->html('</div>');
+        $form->html('</div>');
         echo $form->render();
         ?>
         <br>
@@ -43,8 +43,8 @@
         <p>Converts a Base64 string to an image by pasting a Base64 string in the input field. The output image will
             show up instantly.</p>
         <label class="form-label" for="text_result">Input Base64:</label><textarea id="input_string"
-                                                                                         name="input_string"
-                                                                                         rows="7"></textarea>
+                                                                                   name="input_string"
+                                                                                   rows="7"></textarea>
         <br><br>
         <div style="align-items: center; display: flex; justify-content: center;">
             <img id="base64_img_result" alt="" src="" style="max-width: 50%;"></div>
@@ -69,7 +69,7 @@
                 $("#image-to-base64").show();
             });
 
-            $("#fileInputName").change(function () {
+            $("#file").change(function () {
                 readURL(this);
             });
 

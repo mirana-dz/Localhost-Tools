@@ -22,13 +22,11 @@ form {
     margin-top: 20px;
 }
 
-
 .form-label {
     display: block;
     font-weight: bold;
     margin-bottom: 5px;
 }
-
 
 input[type="text"],
 input[type="email"],
@@ -44,28 +42,53 @@ textarea {
     height: 150px;
 }
 
-/*
-button[type="submit"] {
-    background-color: #333;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    padding: 10px;
-    cursor: pointer;
-    margin-right: 10px;
-}
-
-button[type="submit"]:hover {
-    background-color: #444;
-}
-*/
-
 input[type="text"], input[type="email"], textarea, select {
-    background: #313030;
+    background-color: #313030;
     color: #c0c0c0;
     border: 1px solid #a6780c;
     padding: 7px 10px;
     width: 95%;
+}
+
+.input-search{
+  background-image: url('data:image/svg+xml;charset=utf8,%3Csvg focusable%3D%22false%22 xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22 viewBox%3D%220 0 24 24%22%3E%3Cpath fill%3D%22%239aa0a6%22 d%3D%22M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z%22/%3E%3C/svg%3E');
+  background-repeat: no-repeat;
+  background-position: left center;
+  /* Set the width of the input element to make room for the icon */
+  width: calc(100% - 30px);
+ /* padding-left:35px !important;*/
+  padding: 10px 10px 10px 40px !important;
+}
+
+.input-url{
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><path fill%3D%22%239aa0a6%22 d="M989.5,479.6c0.3,6.8,0.5,13.6,0.5,20.4s-0.2,13.6-0.5,20.4H989c-3,73.4-21.9,142.6-53.8,204.2h0.3c-0.5,1-1.1,1.8-1.6,2.8c-5,9.5-10.5,18.7-16.1,27.8c-2,3.4-3.8,6.9-5.9,10.2h-0.3c-76,117.6-200.9,200.3-346,219.7c0.2,0.1,0.3,0.2,0.5,0.3c-2.7,0.4-5.5,0.5-8.1,0.8c-5,0.6-10,1.1-15,1.6c-14.1,1.3-28.3,2.2-42.8,2.2c-14.5,0-28.7-0.9-42.8-2.2c-5-0.4-10-1-15-1.6c-2.7-0.3-5.5-0.5-8.1-0.8c0.2-0.1,0.3-0.2,0.5-0.3c-145.1-19.4-270-102.1-346-219.7h-0.3c-2.1-3.3-3.9-6.9-5.9-10.2c-5.6-9.1-11.1-18.3-16.1-27.8c-0.5-1-1.1-1.8-1.6-2.8h0.3C33,663,14.1,593.8,11,520.4h-0.5c-0.3-6.8-0.5-13.6-0.5-20.4s0.2-13.6,0.5-20.4H11c3-73.4,21.9-142.6,53.8-204.2h-0.3c0.5-1,1.1-1.8,1.6-2.8c5-9.5,10.5-18.7,16.1-27.8c2-3.4,3.8-6.9,5.9-10.2h0.3c76-117.6,200.9-200.3,346-219.7c-0.2-0.1-0.3-0.2-0.5-0.3c2.7-0.4,5.5-0.5,8.1-0.8c5-0.6,10-1.1,15-1.6c14.1-1.3,28.3-2.2,42.8-2.2c14.5,0,28.7,0.9,42.8,2.2c5,0.4,10,1,15,1.6c2.7,0.3,5.5,0.5,8.1,0.8c-0.2,0.1-0.3,0.2-0.5,0.3c145.1,19.4,270,102.1,346,219.7h0.3c2.1,3.3,3.9,6.9,5.9,10.2c5.6,9.1,11.1,18.3,16.1,27.8c0.5,1,1.1,1.8,1.6,2.8h-0.3C967,337,985.9,406.2,989,479.6H989.5z M948.2,520.4H743.9c-2.4,72-17.6,140.5-42.7,204.2h187.2C923.5,664.1,944.8,594.7,948.2,520.4z M362.1,234.6h117.5V81.2C432.3,125.2,392.3,176.8,362.1,234.6z M637.9,765.4H520.4v153.4C567.7,874.8,607.7,823.2,637.9,765.4z M479.6,918.8V765.4H362.1C392.3,823.2,432.3,874.8,479.6,918.8z M479.6,724.6V520.4H297c2.6,72.4,19.2,141,46.1,204.2H479.6z M479.6,479.6V275.4H343c-26.9,63.1-43.5,131.8-46.1,204.2H479.6z M520.4,81.2v153.4h117.5C607.7,176.8,567.7,125.2,520.4,81.2z M520.4,275.4v204.2H703c-2.6-72.4-19.2-141-46.1-204.2H520.4z M520.4,520.4v204.2H657c26.9-63.1,43.5-131.8,46.1-204.2H520.4z M861.6,765.4H684c-32.6,68-77.9,128.6-132.2,179.8C678.8,930.5,789.5,863.2,861.6,765.4z M448.2,945.2C393.9,894,348.7,833.4,316,765.4H138.4C210.5,863.2,321.2,930.5,448.2,945.2z M111.6,724.6h187.2c-25-63.6-40.3-132.2-42.7-204.2H51.8C55.2,594.7,76.5,664.1,111.6,724.6z M51.8,479.6h204.3c2.4-72,17.6-140.5,42.7-204.2H111.6C76.5,335.9,55.2,405.3,51.8,479.6z M138.4,234.6H316c32.6-68,77.9-128.6,132.2-179.8C321.2,69.5,210.5,136.8,138.4,234.6z M551.8,54.8C606.1,106,651.3,166.6,684,234.6h177.6C789.5,136.8,678.8,69.5,551.8,54.8z M888.4,275.4H701.2c25,63.6,40.3,132.2,42.7,204.2h204.3C944.8,405.3,923.5,335.9,888.4,275.4z"/></svg>');
+  background-repeat: no-repeat;
+  background-position: 4px center;
+  background-size: auto 70%;
+  width: calc(100% - 30px);
+  padding-left: 34px !important;
+}
+
+.input-ip{
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 16 16' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='%239aa0a6' d='M5 2.66C5 4.14 8 8 8 8s3-3.86 3-5.34C10.99 1.2 9.66 0 8 0S5 1.2 5 2.66zM7 3c0-.55.45-1 1-1s1 .45 1 1-.45 1-1 1-1-.45-1-1zM10.5 10H8v5h1v-4h1v1H9v1h2v-3h-.5zM2 9h12c.55 0 1 .45 1 1v5c0 .55-.45 1-1 1H2c-.55 0-1-.45-1-1v-5c0-.55.45-1 1-1zm4 1v5h1v-5H6z' fill-rule='evenodd'%3E%3C/path%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: 4px center;
+  background-size: auto 70%; 
+  width: calc(100% - 30px);
+  padding-left: 34px !important;
+  display: flex;
+  align-items: center;
+}
+
+.input-email{
+  background-image: url("data:image/svg+xml;charset=utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path fill='%239aa0a6' d='M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z'/></svg>");
+  background-repeat: no-repeat;
+  background-position: 4px center;
+  background-size: auto 70%; 
+  width: calc(100% - 30px);
+  padding-left: 34px !important;
+  display: flex;
+  align-items: center;
 }
 
 button, input, optgroup, select, textarea {
@@ -832,3 +855,5 @@ table.tb tr:nth-child(odd) {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+

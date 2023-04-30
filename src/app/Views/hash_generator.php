@@ -3,8 +3,8 @@ include '../app/includes/header.php';
 
 echo $pageDescription;
 
-    // used in ?route=message_digest & ?route=crc32_generator
-    $md_sha = array(
+// used in ?route=message_digest & ?route=crc32_generator
+$md_sha = array(
     '0' => 'MD2',
     '1' => 'MD4',
     '2' => 'MD5',
@@ -16,16 +16,16 @@ echo $pageDescription;
     '30' => 'crc32',
     '31' => 'crc32b',
     '32' => 'crc32c'
-	);
+);
 
 $algorithms = array_diff_key(hash_algos(), $md_sha);
 $option = '';
 foreach ($algorithms as $key => $value) {
-	$upperValue = strtoupper($value);
-	if ($value === 'adler32')
-	$option .= "<option value=\"$value\" selected>$upperValue</option>";
+    $upperValue = strtoupper($value);
+    if ($value === 'adler32')
+        $option .= "<option value=\"$value\" selected>$upperValue</option>";
 
-	$option .= "<option value=\"$value\">$upperValue</option>";
+    $option .= "<option value=\"$value\">$upperValue</option>";
 }
 
 $form = new Form('POST', 'my-form', 'inputForm');

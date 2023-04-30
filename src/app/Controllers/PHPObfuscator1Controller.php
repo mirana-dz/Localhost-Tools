@@ -4,30 +4,35 @@ namespace App\Controllers;
 
 class PHPObfuscator1Controller
 {
-    public function index()
+    public function index(): void
     {
 
         $pageTitle = 'PHP Obfuscator 1';
         $pageCategory = 'Web Development Tools';
         $pageDescription = '<p>The PHP Obfuscator tool obfuscates the source code of a PHP script so that it is difficult to read by people and it\'s significance may be recognized only with mini difficulty.</p>';
 
-        if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-            $input = trim($_POST['input']);
-            ob_start();
-
-            $return_value = match ($_POST['functions']) {
-                'obfu1' => $this->phpObfuscator1($input),
-                'obfu2' => $this->phpObfuscator2($input),
-                'obfu3' => $this->phpObfuscator3($input),
-                'obfu4' => $this->phpObfuscator4($input),
-            };
-            echo $return_value;
-            $result = ob_get_clean();
-            echo $result;
-            exit;
+        if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
+            require_once('../app/views/php_obfuscator_1.php');
+            return;
         }
 
-        require_once('../app/views/php_obfuscator_1.php');
+        $input = trim($_POST['input'] ?? '');
+        $functions = trim($_POST['functions'] ?? '');
+
+        if (empty($input) || empty($functions)) {
+            echo 'Invalid input.';
+            return;
+        }
+
+
+        $return_value = match ($functions) {
+            'obfu1' => $this->phpObfuscator1($input),
+            'obfu2' => $this->phpObfuscator2($input),
+            'obfu3' => $this->phpObfuscator3($input),
+            'obfu4' => $this->phpObfuscator4($input),
+        };
+
+        echo $return_value;
     }
 
     private function phpObfuscator1($phpCode): string

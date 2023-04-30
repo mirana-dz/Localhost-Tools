@@ -4,7 +4,7 @@ include '../app/includes/header.php';
 echo $pageDescription;
 
 $form = new Form('POST', 'my-form', 'inputForm');
-$form->input('input', 'Enter an IP Address:', 'text');
+$form->input('input', 'Enter an IP Address:', 'text', array('class' => 'input-ip'));
 $form->button('action', 'convert', 'Convert', array('class' => 'button'));
 echo $form->render();
 

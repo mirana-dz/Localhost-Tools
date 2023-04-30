@@ -2,45 +2,57 @@
 
 namespace App\Controllers;
 
+use GuzzleHttp\Client;
+use GuzzleHttp\Exception\ClientException;
+use GuzzleHttp\Exception\GuzzleException;
+
 class AdminFinderController
 {
-    public function index()
+    public function index(): void
     {
 
         $pageTitle = 'Admin Finder';
         $pageCategory = 'Pentesting Tools';
         $pageDescription = '<p>Website admin panel finder is designed to find the admin panel of any website by using a wordlist.</p>';
 
-        if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-            $url = trim($_POST['url']);
-            $admin = trim($_POST['word']);
-            ob_start();
-
-            // $link = urldecode($url . $admin);
-            $link = $url . $admin;
-
-            // $headers = get_headers($link, 1);
-            $httpCode = getHTTPCode($link);
-
-            // if ($headers[0] == 'HTTP/1.1 200 OK') {
-            if ($httpCode == 200) {
-                //TODO
-                $outputFilePath = dirname(__FILE__, 2) . DIRECTORY_SEPARATOR . 'outputs' . DIRECTORY_SEPARATOR . 'adminFinder.txt';
-                $outputFile = fopen($outputFilePath, 'a') or die('Unable to open file!');
-                $txt = $link . "\n";
-                fputs($outputFile, $txt);
-                fclose($outputFile);
-
-                echo '<tr><td>[+]</td><td><a href="' . $url . $admin . '" target="_blank">' . $url . $admin . '</a></td><td>[ <span style="color:green;font-weight:bold">Found</span> ]</td></tr>';
-            } else {
-                echo '<tr><td>[-]</td><td>' . $url . $admin . '</td><td>[ <span style="color:red">Not Found</span> ]</td></tr>';
-            }
-
-            $result = ob_get_clean();
-            echo $result;
-            exit;
+        if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
+            require_once('../app/views/admin_finder.php');
+            return;
         }
 
-require_once('../app/views/admin_finder.php');
+        $url = trim($_POST['url'] ?? '');
+        $admin = trim($_POST['word'] ?? '');
+
+        if (empty($url) || empty($admin)) {
+            echo 'Invalid input.';
+            return;
+        }
+
+        $link = $url . $admin;
+        $result = '';
+
+
+        $client = new Client();
+
+        try {
+            $res = $client->request('GET', $link);
+            $httpCode = $res->getStatusCode();
+            if ($httpCode == 200) {
+                $result .= '<tr><td>[+]</td><td><a href="' . $url . $admin . '" target="_blank">' . $url . $admin . '</a></td><td>[ <span style="color:green;font-weight:bold">Found</span> ]</td></tr>';
+            }
+            // Process the response as needed
+        } catch (ClientException $e) {
+            if ($e->getResponse()->getStatusCode() == 404) {
+                // Handle the 404 error
+                $result .= '<tr><td>[-]</td><td>' . $url . $admin . '</td><td>[ <span style="color:red">Not Found</span> ]</td></tr>';
+            } else {
+                // Handle other types of errors
+                echo "An error occurred: " . $e->getMessage();
+            }
+        } catch (GuzzleException $e) {
+            echo "An error occurred: " . $e->getMessage();
+        }
+
+        echo $result;
     }
 }

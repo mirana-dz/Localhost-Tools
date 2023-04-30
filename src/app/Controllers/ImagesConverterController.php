@@ -7,7 +7,7 @@ use App\Libraries\ImageConverter;
 
 class ImagesConverterController
 {
-    public function index()
+    public function index(): void
     {
 
         $pageTitle = 'Images Converter';
@@ -17,12 +17,12 @@ class ImagesConverterController
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             ob_start();
 
-            //$uploadDir = 'uploads';
+            $uploadDir = UPLOAD_DIR;
             $allowedMimeTypes = ['image/jpeg', 'image/png', 'image/gif'];
             $maxFileSize = 5 * 1024 * 1024; // 5 MB
             $returnFileData = false;
 
-            $uploader = new Uploader(UPLOAD_DIR, $allowedMimeTypes, $maxFileSize, $returnFileData);
+            $uploader = new Uploader($uploadDir, $allowedMimeTypes, $maxFileSize, $returnFileData);
 
             try {
                 list($fileName, $fileExtension) = $uploader->uploadFile('file');
@@ -59,7 +59,7 @@ class ImagesConverterController
 
                 echo 'Image conversion and upload successful.';
                 echo '<br>' . $convertedFilePath;
-                echo '<img src="' . $convertedFilePath . '" alt="barbaris localhost tools">';
+                echo '<img src="' . $convertedFilePath . '" alt="Mirana localhost tools">';
 
             } catch (Exception $e) {
                 echo 'Error: ' . $e->getMessage();

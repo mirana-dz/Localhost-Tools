@@ -41,7 +41,7 @@ List of all available tools in MIRANA-DZ Localhost Tools.
 Tools count: +60
 
 ### Encoding/Decoding Tools
-- Base64-32 Encoder / Decoder
+- Base64-58-32 Encoder / Decoder
 - URL Encoder / Decoder
 - UU Encoder / Decoder
 - ROT13 Encoder / Decoder
@@ -63,6 +63,7 @@ Tools count: +60
 - Htpasswd Generator
 - Caesar Cipher
 - Reverse Hash Lookup
+- Password Decoder
 
 ### Web Development Tools
 - HTML Minifier
@@ -127,10 +128,16 @@ PHP version 8 or higher with following extensions enabled and dependencies :
 - Dom PHP Extension
 - GD PHP Extension
 - mbString PHP Extension
-- tuupola/base32
+- intl PHP Extension
+- guzzlehttp
+- tuupola/base32 & tuupola/base58
+
 
 ## Changelog
-See [changelog](./CHANGELOG.md).
+See [Changelog](./CHANGELOG.md).
+
+## Credits
+See [Credits](./CREDITS.md).
 
 ## PSD files
 Source \*.PSD files for all images and icons used in this project are included in the resources directory. You can modify/redistribute it however you like.  

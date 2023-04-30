@@ -7,7 +7,7 @@
  *
  * @author        MIRANA-DZ <mirana-dz@proton.me>
  * @link          https://github.com/mirana-dz/Localhost-Tools    MIRANA-DZ LOCALHOST TOOLS Project.
- * @version 1.1.0
+ * @version 1.2.0 Beta
  *
  */
 

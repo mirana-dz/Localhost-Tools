@@ -4,7 +4,7 @@ include '../app/includes/header.php';
 echo $pageDescription;
 
 $form = new Form('POST', 'my-form', 'inputForm');
-$form->input('input', 'Domain or IP Address:', 'text');
+$form->input('input', 'Domain or IP Address:', 'text', array('class' => 'input-url'));
 $form->select('count', 'Total Ping count:', array(
     '1t' => '1 time',
     '2t' => '2 times',

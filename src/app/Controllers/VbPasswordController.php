@@ -4,27 +4,30 @@ namespace App\Controllers;
 
 class VbPasswordController
 {
-    public function index()
+    public function index(): void
     {
 
         $pageTitle = 'Vb Password Generator';
         $pageCategory = 'Cryptography Tools';
         $pageDescription = '<p>vBulletin Password Hash Generator.</p>';
 
-        if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-            $input = trim($_POST['input']);
-            ob_start();
-            $result = $this->generateVbPassword($input);
-            $passwordHash = $result['passwordHash'];
-            $salt = $result['salt'];
-
-            echo $passwordHash . '<!--SPLIT-->' . $salt;
-            $result = ob_get_clean();
-            echo $result;
-            exit;
+        if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
+            require_once('../app/views/vb_Password_generator.php');
+            return;
         }
 
-        require_once('../app/views/vb_Password_generator.php');
+        $input = trim($_POST['input'] ?? '');
+
+        if (empty($input)) {
+            echo 'Invalid input.';
+            return;
+        }
+
+        $result = $this->generateVbPassword($input);
+        $passwordHash = $result['passwordHash'];
+        $salt = $result['salt'];
+
+        echo $passwordHash . '<!--SPLIT-->' . $salt;
     }
 
     private function generateVbPassword($pass): array

@@ -8,8 +8,8 @@ define('BASE_PATH', __DIR__);
 // Site settings
 define('SITE_NAME', 'MIRANA-DZ LOCALHOST TOOLS');
 //define('SITE_URL', 'http://localhost/Localhost-Tools');
-define('OUTPUT_DIR', BASE_PATH . '/outputs');
-define('UPLOAD_DIR', BASE_PATH . '/uploads');
+define('OUTPUT_DIR', 'outputs');
+define('UPLOAD_DIR', 'uploads');
 // API KEY
 define('OPENAI_API_KEY', 'YOUR API KEY');
 define('IMGBB_API_KEY', '3562ece80429b257452186d68be77d5ba6340a5d');
@@ -52,6 +52,7 @@ $routes = [
     'htPasswd_generator' => '\App\Controllers\HtpasswdGeneratorController@index',
     'caesar_cipher' => '\App\Controllers\CaesarCipherController@index',
     'reverse_hash_lookup' => '\App\Controllers\ReverseHashLookupController@index',
+    'password_decoder' => '\App\Controllers\PasswordDecoderController@index',
     // 3- Web Development Tools
     'html_minifier' => '\App\Controllers\HtmlMinifierController@index',
     'html_obfuscator' => '\App\Controllers\HtmlObfuscatorController@index',

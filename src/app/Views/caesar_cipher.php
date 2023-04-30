@@ -19,7 +19,7 @@ echo $pageDescription;
             margin-bottom: 5px;
         }
 
-.arrow::before {
+        .arrow::before {
             content: "\2193\2193\2193\2193\2193\2193\2193\2193\2193\2193\2193\2193\2193\2193\2193\2193\2193\2193\2193\2193\2193\2193";
             font-family: monospace;
             white-space: pre;

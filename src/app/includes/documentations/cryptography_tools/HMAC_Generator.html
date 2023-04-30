@@ -1,0 +1,26 @@
+<h3>What is HMAC and its usage?</h3>
+<p>HMAC stands for "Keyed-Hash Message Authentication Code," and is a mechanism used for verifying the authenticity and
+    integrity of a message or data. It is a type of message authentication code (MAC) that uses a cryptographic hash
+    function and a secret key to generate a message authentication code.
+</p>
+<p>
+    HMAC is commonly used in network security protocols such as SSL/TLS, IPsec, and SSH. It is also used in applications
+    such as digital signatures, password authentication, and message integrity checks.
+</p>
+<p>
+    The HMAC algorithm works by taking a message, and applying a cryptographic hash function (such as SHA-256 or
+    SHA-512) to it, along with a secret key. The output of the hash function is then combined with the secret key, and
+    the hash function is applied again. This process is repeated until a fixed-length hash is generated, which is known
+    as the HMAC.
+</p>
+<p>
+    The secret key used in HMAC must be kept secret between the sender and receiver of the message, as it is used to
+    verify the authenticity and integrity of the message. The receiver can then use the same HMAC algorithm and secret
+    key to generate an HMAC for the received message, and compare it with the HMAC received with the message. If the
+    HMACs match, it means that the message has not been tampered with and is authentic.
+</p>
+<p>
+    HMAC is a widely used mechanism for providing message authentication and integrity, as it is secure, efficient, and
+    relatively easy to implement. It can be used in a variety of applications where data security is important,
+    including secure communications protocols, digital signatures, and password authentication.
+</p>

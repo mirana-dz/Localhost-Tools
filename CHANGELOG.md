@@ -2,6 +2,26 @@
 
 All notable changes to this project will be documented in this file, in reverse chronological order by release.
 
+## Version [1.2.0] Beta - 2023-05-01
+
+### Added
+ - Added Password Decoder tool to decode encrypted passwords for various formats such as Cisco Type 7, Cisco VPN Client Password, Groupe Policy Processing, etc.
+ - Added Base58 tool for encoding and decoding data in Base58 format.
+ - Added documentation section for some tools to provide detailed information about their usage and functionality.
+ - Added SVG icons to the left of input type text fields for better UI and user experience. These icons include email, IP, URL, and other relevant icons.
+
+### Fixed
+ - Fixed minor bugs and glitches in the application to provide a seamless user experience.
+
+### Changed
+ - Changed Select Search Engine by buttons in Reverse Image Search tool for a better user experience.
+
+### Updated
+ - Updated composer.json to include the latest dependencies and ensure compatibility with the latest versions of PHP and other libraries.
+ - Updated jquery-3.6.0 to jquery-3.6.4 for better security and performance.
+ - Updated spectrum-1.8.1 to spectrum-2.0.10 for better UI and performance.
+ - Updated jquery-validation-1.19.3 to jquery-validation-1.19.5 for better validation of form inputs.
+
 ## Version [1.1.0] - 2023-04-24
 
 ### Added
@@ -20,7 +40,7 @@ All notable changes to this project will be documented in this file, in reverse 
  - Added README-AR.md in Arabic language for arabic speakers
  - Added index-ar.html in _docs folder for providing documentation in Arabic
  
-### Fixed
+ ### Fixed
  - Fixed minor bugs and glitches in the application
  - Optimized the Path code in header.php for improved performance
  - Fixed form-flex and added placeholders for multiple input fields

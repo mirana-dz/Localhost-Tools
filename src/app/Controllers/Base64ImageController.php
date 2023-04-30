@@ -6,7 +6,7 @@ use App\Core\Uploader;
 
 class Base64ImageController
 {
-    public function index()
+    public function index(): void
     {
 
         $pageTitle = 'Base64 Image Encoder / Decoder';

@@ -1,7 +1,6 @@
 <?php include '../app/includes/header.php'; ?>
 
     <link href="assets/modules/prism.js/prism.css" rel="stylesheet"/>
-    <script src="assets/modules/prism.js/prism.js"></script>
 
 <?php
 //echo $pageDescription;
@@ -15,7 +14,7 @@ if (isset($_GET['Goto'])) {
     if (isset($getGotoPage[0])) {
         $gotoFilePage = ucfirst(strtolower($getGotoPage[0]));
         $gotoFileName = $gotoFilePage . '.php';
-        $fullPath = '../app/includes/' . $gotoFileName;
+        $fullPath = '../app/includes/lists_and_tables/' . $gotoFileName;
     }
 
     //echo $fullPath;
@@ -94,5 +93,5 @@ ISO Country List - HTML select/dropdown snippet & MYSQL database table
 <p>Included in this page are the HTML select/dropdown code snippets to generate a list of countries using the ISO-3166-1 and ISO-3166-2 codes.</p>
 </a>';
 }
-
+echo '<script src="assets/modules/prism.js/prism.js"></script>';
 include '../app/includes/footer.php'; ?>

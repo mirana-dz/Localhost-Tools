@@ -1,2 +1,2 @@
-composer require tuupola/base32
+composer require guzzlehttp/guzzle
 pause

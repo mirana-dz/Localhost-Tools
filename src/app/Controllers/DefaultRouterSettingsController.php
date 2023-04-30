@@ -4,12 +4,14 @@ namespace App\Controllers;
 
 class DefaultRouterSettingsController
 {
-    public function index()
+    public function index(): void
     {
+        require_once '..\app\Helpers\PaginationHelper.php';
 
         $pageTitle = 'Default Router Settings';
         $pageCategory = 'Pentesting Tools';
         $pageDescription = '<p>Default Router Settings is a web-based tool, that enables users to access the IP address and login credentials of multiple routers with ease. With just a few clicks, users can find the default username and password of various routers and modify their network settings as required.</p>';
+
 
         if ($_SERVER['REQUEST_METHOD'] === 'GET' & isset($_GET['action'])) {
 
@@ -61,9 +63,10 @@ class DefaultRouterSettingsController
 
         $nodes = json_decode($routerSettingsJson);
         $html = parseNodes($nodes);
-        echo '<b>Total Brand</b>: ' . count($nodes);
         $totalBrand = count($nodes);
+        echo '<b>Total Brand</b>: ' . $totalBrand;
         $limit = 30;
+
         $totalPages = ceil($totalBrand / $limit);
 
         $page = !empty($_GET['page']) ? (int)$_GET['page'] : 1;
@@ -76,8 +79,7 @@ class DefaultRouterSettingsController
 
         $html = parseNodes($yourDataArray);
 
-        ?>
-        <table class="tb">
+        echo '<table class="tb">
             <thead>
             <tr>
                 <th scope="col">Brand</th>
@@ -86,30 +88,12 @@ class DefaultRouterSettingsController
                 <th scope="col">Password</th>
             </tr>
             </thead>
-            <tbody>
-            <?php
-            echo $html;
-            ?>
-            </tbody>
-        </table>
-        <?php
-        $pageLink = '&page=%d';
-        $paginationContainer = '<div class="pagination">';
-        if ($totalPages != 0) {
-            if ($page == 1) {
-                $paginationContainer .= '';
-            } else {
-                $paginationContainer .= sprintf('<a class="pageNav" id="' . $pageLink . '" href="javascript:void(0)"> &#171; prev page</a>', $page - 1);
-            }
-            $paginationContainer .= ' <span> page <strong>' . $page . '</strong> from ' . $totalPages . '</span>';
-            if ($page == $totalPages) {
-                $paginationContainer .= '';
-            } else {
-                $paginationContainer .= sprintf('<a class="pageNav" id="' . $pageLink . '" href="javascript:void(0)"> next page &#187; </a>', $page + 1);
-            }
-        }
-        $paginationContainer .= '</div>';
+            <tbody>' . $html . '</tbody>
+        </table>';
 
-        echo $paginationContainer;
+        $paginationHTML = generatePagination($page, $totalPages);
+
+        // output the pagination HTML
+        echo $paginationHTML;
     }
 }

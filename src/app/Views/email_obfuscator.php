@@ -4,7 +4,7 @@ include '../app/includes/header.php';
 echo $pageDescription;
 
 $form = new Form('POST', 'my-form', 'email-obfuscator');
-$form->input('input', 'Enter your email:', 'text');
+$form->input('input', 'Enter your email:', 'text', array('class' => 'input-email'));
 $form->input('email_title', 'Title:', 'text');
 $form->select('method', 'Method:', array(
     'javascript' => 'Javascript',

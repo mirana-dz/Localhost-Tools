@@ -92,7 +92,7 @@ echo $form->render();
                     // add '/' last of targetUrl
                     targetUrl = targetUrl + '/';
                 }
-
+                $('#Current_status_target').empty();
                 $('#Current_status_target').append(targetUrl);
 
                 resultsDiv.empty();

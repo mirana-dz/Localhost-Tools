@@ -44,12 +44,16 @@ $searchData[] = array('id' => 'Vb Password Generator', 'url' => '?route=vb_Passw
 $searchData[] = array('id' => 'Drupal Password Generator', 'url' => '?route=drupal_password_generator');
 $searchData[] = array('id' => 'Htpasswd Generator', 'url' => '?route=htPasswd_generator');
 $searchData[] = array('id' => 'Reverse Hash Lookup', 'url' => '?route=reverse_hash_lookup');
+$searchData[] = array('id' => 'Password Decoder', 'url' => '?route=password_decoder');
+$searchData[] = array('id' => 'CISCO VPN Client Password', 'url' => '?route=password_decoder');
 // Web Development Tools
 $searchData[] = array('id' => 'HTML Minifier', 'url' => '?route=html_minifier');
 $searchData[] = array('id' => 'HTML Obfuscator', 'url' => '?route=html_obfuscator');
 $searchData[] = array('id' => 'HTML Escape', 'url' => '?route=html_escape_unescape');
 $searchData[] = array('id' => 'HTML Unescape', 'url' => '?route=html_escape_unescape');
 $searchData[] = array('id' => 'EMAIL Obfuscator', 'url' => '?route=email_obfuscator');
+
+$searchData[] = array('id' => 'JS Minifier', 'url' => '?route=js_minifier');
 
 $searchData[] = array('id' => 'CSS Minifier', 'url' => '?route=css_minifier');
 $searchData[] = array('id' => 'CSS Text Shadow', 'url' => '?route=css_text_shadow');

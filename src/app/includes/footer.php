@@ -1,3 +1,15 @@
+<?php
+$pageCategoryLower = strtolower($pageCategory);
+$pageCategoryFolder = preg_replace('/[ \/]+/', '_', $pageCategoryLower);
+
+$documentationPage = preg_replace('/[ \/]+/', '_', $pageTitle) . '.html';
+$documentationPagePath = '../app/includes/documentations/' . $pageCategoryFolder . DIRECTORY_SEPARATOR . $documentationPage;
+
+if (file_exists($documentationPagePath)) {
+    echo '<header class="header"><h3 class="documentation_svg">Documentation</h3></header>';
+    include $documentationPagePath;
+}
+?>
 </div><!-- container -->
 <?php
 if (isset($pageCategory)) {
@@ -46,8 +58,8 @@ if (isset($pageCategory)) {
 <!-- Javascript -->
 <script src="assets/js/app.js"></script>
 <script src="assets/js/FileSaver.js"></script>
-<script src="assets/modules/jquery-validation-1.19.3/dist/jquery.validate.min.js"></script>
-<script src="assets/modules/jquery-validation-1.19.3/dist/additional-methods.min.js"></script>
+<script src="assets/modules/jquery-validation-1.19.5/dist/jquery.validate.min.js"></script>
+<script src="assets/modules/jquery-validation-1.19.5/dist/additional-methods.min.js"></script>
 <script src="assets/js/form-validation.js"></script>
 </body>
 </html>

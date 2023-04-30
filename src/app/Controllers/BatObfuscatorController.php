@@ -4,26 +4,26 @@ namespace App\Controllers;
 
 class BatObfuscatorController
 {
-    public function index()
+    public function index(): void
     {
 
         $pageTitle = 'Bat Obfuscator';
         $pageCategory = 'Miscellaneous Tools';
         $pageDescription = '<p>Batch script obfuscation is a tool used by developers to protect their scripts from unauthorized access. It converts batch script code into an obfuscated form that is difficult to understand or modify. This tool helps developers safeguard their batch scripts from unauthorized users.</p>';
 
-        if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-            $input = trim($_POST['input']);
-            ob_start();
-
-
-            echo $this->batObfuscator($input);
-
-            $result = ob_get_clean();
-            echo $result;
-            exit;
+        if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
+            require_once('../app/views/bat_obfuscator.php');
+            return;
         }
 
-        require_once('../app/views/bat_obfuscator.php');
+        $input = trim($_POST['input'] ?? '');
+
+        if (empty($input)) {
+            echo 'Invalid input.';
+            return;
+        }
+
+        echo $this->batObfuscator($input);
     }
 
     private function batObfuscator($batCode): string

@@ -279,7 +279,7 @@ echo $pageDescription;
                     sensitive files, error messages, login pages, and more. </p>
                 <label for="inputTarget" class="form-label">Target</label>
                 <input type="text" name="inputTarget" id="inputTarget" placeholder="www.example.com"
-                       value="">
+                       value="" class="input-url">
                 <label for="selectOption" class="form-label">Google Dorks</label>
                 <div class="selectDiv">
                     <select id="selectDork" name="selectDork">
@@ -313,6 +313,7 @@ echo $pageDescription;
                     <input type="text" name="inputBuilder" id="inputBuilder" value="">
                     <input type="button" id="searchBtn" name="searchBtn" value="Search" class="button margin-top"
                            onclick="searchByBuilder()">
+                    <header class="separator"></header>
                 </div>
 
                 <script>

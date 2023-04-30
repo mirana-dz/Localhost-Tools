@@ -4,30 +4,32 @@ namespace App\Controllers;
 
 class CaesarCipherController
 {
-    public function index()
+    public function index(): void
     {
 
         $pageTitle = 'Caesar Cipher';
         $pageCategory = 'Cryptography Tools';
         $pageDescription = '<p>This tool uses the Caesar Cipher algorithm to encrypt and decrypt text by shifting letters by a fixed number of positions in the alphabet. It is useful for quick and easy encryption/decryption.</p>';
 
-        if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-            $input = trim($_POST['input']);
-            $shift = trim($_POST['shift']);
-            ob_start();
-
-            if ($_POST['action'] === 'encrypt') {
-                echo $this->caesar_cipher($input, $shift);
-            } elseif ($_POST['action'] === 'decrypt') {
-                echo $this->caesar_cipher($input, 26 - $shift);
-            }
-
-            $result = ob_get_clean();
-            echo $result;
-            exit;
+        if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
+            require_once('../app/views/caesar_cipher.php');
+            return;
         }
 
-        require_once('../app/views/caesar_cipher.php');
+        $input = trim($_POST['input'] ?? '');
+        $shift = trim($_POST['shift'] ?? '');
+        $action = trim($_POST['action'] ?? '');
+
+        if (empty($input) || empty($shift) || empty($action)) {
+            echo 'Invalid input.';
+            return;
+        }
+
+        if ($action === 'encrypt') {
+            echo $this->caesar_cipher($input, $shift);
+        } elseif ($action === 'decrypt') {
+            echo $this->caesar_cipher($input, 26 - $shift);
+        }
     }
 
     private function caesar_cipher($text, $shift)

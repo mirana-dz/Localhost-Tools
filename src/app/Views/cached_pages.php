@@ -36,9 +36,9 @@ echo $pageDescription;
 
 <?php
 $form = new Form('POST', 'my-form', 'inputForm');
-$form->input('input', 'Get the cached page of any URL:', 'text');
-$form->button('action', 'google', 'Google Cache', array('class' => 'button', 'onclick' => 'doWebArchive()'));
-$form->button('action', 'archive', 'Archive.org', array('class' => 'button', 'onclick' => 'doGoogleCache()'));
+$form->input('input', 'Get the cached page of any URL:', 'text', array('class' => 'input-url'));
+$form->button('action', 'google', 'Google Cache', array('class' => 'button', 'onclick' => 'doGoogleCache()'));
+$form->button('action', 'archive', 'Archive.org', array('class' => 'button', 'onclick' => 'doWebArchive()'));
 $form->html('<font color="#404040"><strong>&nbsp;|&nbsp;</strong></font>');
 $form->button('action', 'encode', 'Live Version', array('class' => 'button', 'onclick' => 'doOpenUrl()'));
 echo $form->render();

@@ -2,69 +2,37 @@
 
 namespace App\Controllers;
 
+use App\Helpers\CiscoDecrypt;
+
 class CiscoType7Controller
 {
 
-    public function index()
+    public function index(): void
     {
 
         $pageTitle = 'Cisco Type 7 Password';
         $pageCategory = 'Cryptography Tools';
         $pageDescription = '<p>Decrypt & encrypt Cisco IOS type 7 passwords.</p>';
 
-        if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-            $input = trim($_POST['input']);
-            ob_start();
-            if ($_POST['action'] === 'encode') {
-                echo $this->encrypt_cisco_type_7($input);
-            } elseif ($_POST['action'] === 'decode') {
-                echo $this->decrypt_cisco_type_7($input);
-            }
-
-            $result = ob_get_clean();
-            echo $result;
-            exit;
+        if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
+            require_once('../app/views/cisco_type_7.php');
+            return;
         }
 
-        require_once('../app/views/cisco_type_7.php');
-    }
+        $input = trim($_POST['input'] ?? '');
+        $action = trim($_POST['action'] ?? '');
 
-    private function encrypt_cisco_type_7($password)
-    {
-        $key = 4; // Encryption key for Cisco Type 7
-
-        $password = str_split($password);
-
-        foreach ($password as $char) {
-            $output[] = ord($char) ^ $key;
-            $key = $output[count($output) - 1];
+        if (empty($input) || empty($action)) {
+            echo 'Invalid input.';
+            return;
         }
 
-        $output = implode('', array_map('chr', $output));
-        $output = base64_encode($output);
-
-        return '7 ' . $output;
-    }
-
-    private function decrypt_cisco_type_7($password)
-    {
-        $password = substr($password, 2); // Remove the '7 ' prefix
-        $password = base64_decode($password);
-
-        $key = 4; // Encryption key for Cisco Type 7
-
-        $password = str_split($password);
-
-        foreach ($password as $char) {
-            $output[] = ord($char) ^ $key;
-            $key = ord($char);
+        if ($action === 'encode') {
+            $result = CiscoDecrypt::encrypt_cisco_type_7($input);
+        } elseif ($action === 'decode') {
+            $result = CiscoDecrypt::decrypt_cisco_type_7($input);
         }
-		if (isset($output)) {
-        $output = implode('', array_map('chr', $output));
-        return $output;
-		} else {
-		//TODO
-		return 'This one is NOT cisco type 7';
-		}
+
+        echo $result;
     }
 }
