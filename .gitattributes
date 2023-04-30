@@ -1,6 +1,7 @@
 # Exclude files from GitHub's language statistics
 
 _docs/* linguist-documentation
+src/vendor/** linguist-vendored
 src/public/files/** linguist-vendored
 src/public/css/* linguist-vendored
 src/public/modules/** linguist-vendored
